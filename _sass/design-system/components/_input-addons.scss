@@ -1,0 +1,49 @@
+.input-addon {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+
+    .f_textfield {
+        flex-grow: 1;
+    }
+
+    &__btn-group {
+        position: relative;
+    }
+    // Sort rounded corners depending of where is what
+    // between buttons, labels and field.
+
+    .btn:first-child {
+        border-radius: $br-standard 0 0 $br-standard;
+        margin-right: -1px;
+    }
+
+    .btn:last-child {
+        border-radius: 0 $br-standard $br-standard 0;
+        margin-left: -1px;
+    }
+
+    &__btn-group:first-child {
+        > .btn {
+            border-radius: $br-standard 0 0 $br-standard;
+            margin-right: -1px;
+        }
+    }
+
+    &__btn-group:last-child {
+        > .btn {
+            border-radius: 0 $br-standard $br-standard 0;
+            margin-left: -1px;
+        }
+    }
+
+    .f__textfield:not(:first-child) {
+        border-radius: 0 $br-standard $br-standard 0;
+    }
+
+    .f__textfield:not(:last-child) {
+        border-radius: $br-standard 0 0 $br-standard;
+    }
+
+}

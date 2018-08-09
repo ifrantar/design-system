@@ -1,0 +1,161 @@
+.auth {
+    width: 100%;
+    text-align: center;
+    padding-top: $space__4x-large;
+    max-width: 920px;
+    margin: 0 auto; 
+
+    &__header {
+        padding-bottom: $space__medium;
+
+        h2 {
+            margin-bottom: $space__small;
+        }
+    }
+
+    &__logo {
+        width: 148px;
+        height: 52px;
+        background: url(/public/assets/images/stellwagen_portal/stellwagen-emblem.svg) 0 0 no-repeat;
+        background-size: 90%;
+        margin: 0 auto;
+        margin-bottom: $space__x-large;
+    }
+
+    &__content {
+        width: 920px;
+        margin:0 auto $space__x-large;
+        padding: $space__3x-large;
+
+        &--reset {
+            width: 600px;
+
+            .auth__col:first-child {
+                padding-right: 0;
+            }
+    
+            .auth__col:last-child {
+                padding-left: 0;
+            }
+        }
+
+        &--no-padding {
+            padding: 0;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        text-align: left;
+
+        .auth__divider {
+            padding-bottom: 0;
+        }
+    }
+
+    &__form, &__third-party {
+        width: 100%;
+        margin-bottom: 0;
+
+        li {
+            padding-bottom: $space__medium;
+
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__col {
+
+        &:first-child {
+            padding-right: $space__xx-large
+        }
+
+        &:last-child {
+            padding-left: $space__xx-large;
+        }
+
+        &--social {
+            position: relative;
+            border-right: 1px solid $color__blue-grey-100;
+
+        }
+
+    }
+
+    &__ancillary {
+        padding-top: $space__s-medium;
+        float: left;
+        width: 100%;
+        margin-bottom: $space__small;
+
+        &-remember {
+            float: left;
+        }
+
+        &-forgot {
+            float: right;
+
+        }
+    }
+
+    &__linkage {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.password {
+    &__note {
+        font-size: 80%;
+        text-align: left;
+        padding: $space__small 0 0;
+        margin-bottom: 0;
+        width: 100%;
+        position: static;
+
+        .material-icons {
+            font-size: 20px;
+            color: $color__blue-grey-300;
+        }
+    }
+
+    &__hint {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    &__valid {
+        margin-bottom: 0;
+        
+        .material-icons {
+            color: $color__green-500;
+            float: left;
+            top: -2px;
+            margin-right: 4px;
+        }
+    }
+
+    &--striked {
+        text-decoration: line-through;
+    }
+}
+
+.divider {
+
+    &__or {
+        background: white;
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        margin-top:-$space__s-medium;
+        padding-top: $space__xx-small;
+        padding-bottom: $space__xx-small;
+        color: $color__blue-grey-500;
+    }
+
+}

@@ -1,0 +1,33 @@
+.header {
+    grid-area: header;
+    background: white;
+    position: relative;
+    
+    &__main {
+        display: flex;
+        border-bottom: 1px solid $color__blue-grey-100;
+        height: 56px;
+        padding: $space__x-small $space__small;
+        align-items: center;
+    }
+
+    &__title {
+        flex: 1;
+
+        .title {
+            margin: 0;
+        }
+    }
+
+    &__sub-navigation {
+        border-bottom: 1px solid $color__blue-grey-100;
+        padding: 0 $space__small 0;
+    }
+
+    &__close {
+        position: absolute;
+        top: $space__small;
+        right: $space__small;
+    }
+    
+}

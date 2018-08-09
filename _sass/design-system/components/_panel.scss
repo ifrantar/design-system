@@ -1,0 +1,280 @@
+.panel {
+    background: $color__white;
+    border-radius: $br-standard;
+    border: 1px solid $color__blue-grey-100;
+    width: 100%;
+
+    // Header styling
+    // --------------
+
+    &__header {
+        position: relative;
+        padding: 0 $space__s-medium 0;
+        border-bottom: 1px solid $color__blue-grey-100;
+        display: flex;
+        align-items: center;
+        height: $space__3x-large;
+
+        &--title {
+            flex: 1;
+        }
+
+        h3 {
+            // font-size: $font__panel-header;
+            padding: 0;
+            margin: 0;
+            flex: 1;
+        }
+
+        &--align {
+            &-left {
+              justify-content: flex-start;
+            }
+            &-center {
+              justify-content: center;
+            }
+            &-right {
+              justify-content: flex-end;
+            }
+        }
+
+        /* action included in the header */
+
+        &--with-spinner {
+            .spinner__small {
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                margin-top: -15px;
+            }
+        }
+
+        &--flexed {
+            display: flex;
+        }
+    }
+
+    &__sub-navigation {
+        padding: 0 0.75rem 0;
+        height: auto;
+    }
+
+    &__tabs {
+        flex: 1;
+
+        ul, a {
+            height: 100%;
+        }
+
+        a {
+            padding-top: 1.2rem;
+        }
+
+        .tabs__item {
+            height:100%;
+            line-height: unset;
+        }
+    }
+
+    &__segmented, &__buttons {
+        // flex: 1;
+
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right;
+        }
+    }
+
+    &__buttons {
+        .btn:first-child {
+            margin-right: $space__x-small;
+        }
+
+        .btn::last-child {
+            margin-right: 0;
+        }
+    }
+
+    // Title styling
+    // -------------
+
+    &__title {
+        flex-grow: 1;
+    }
+
+    // Actions styling
+    // ---------------
+
+    &__actions {
+
+    //   &-left {
+    //       margin-right: $space__x-small;
+    //       margin-left: -$space__x-small;
+    //   }
+
+    //   &-right {
+
+    //   }
+
+      &-item {
+          margin-left: $space__x-small;
+          margin-right: $space__x-small;
+
+          &:first-child {
+            margin-left: -$space__xx-small;
+          }
+
+          &:last-child {
+            margin-right: -$space__xx-small;
+          }
+
+          &--active {
+              .material-icons {
+                  color: $color__blue-grey-800;
+              }
+          }
+      }
+
+      &-buttons {
+          > .btn {
+            margin-left: $space__xx-small;
+            margin-right: $space__xx-small;
+  
+            &:first-child {
+              margin-left: -$space__xx-small;
+            }
+  
+            &:last-child {
+              margin-right: -$space__xx-small;
+            }
+          }
+      }
+
+    }
+
+    // Body styling
+    // ------------
+
+    &__body {
+        padding: 1.5rem;
+        @include clearfix();
+
+        &--with-table {
+            padding: 0;
+        }
+
+        &--with-loader {
+            position: relative;
+        }
+
+        &--with-sidebars {
+            display:flex;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        &--empty-state {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+        &--overflow-x {
+            overflow: hidden;
+            margin-right: -9999px;
+            width: 100%;
+        }
+
+    }
+
+    // Table integration to panels
+    // ---------------------------
+
+    &__table {
+        padding: 0;
+
+        thead {
+            border: 0;
+        }        
+    }
+
+    // Content and sidebars on panels
+    // ------------------------------
+
+    &__content {
+
+        flex: 1;
+
+        &--right-sidebar, &--left-sidebar {
+            background: $color__white;
+            padding: $space__medium;
+            border:1px solid $color__blue-grey-100;
+        }
+
+        &--right-sidebar {
+            border-width: 0 0 0 1px;
+            flex: 0 0 350px;
+        }
+
+        &--left-sidebar {
+            flex: 0 0 450px;
+            border-width: 0 1px 0 0;
+        }
+
+        &--inner {
+            height: 50%;
+            width: 100%;
+
+            &-flex {
+              display: flex;
+            }
+        }
+
+    }
+
+
+    // Footer styling
+    // --------------
+
+    &__footer {
+        border-top: 1px solid $color__blue-grey-100;
+        padding: $space__small $space__medium;
+
+        &--buttons {
+            text-align: right;
+        }
+
+    }
+
+    // No panel styling
+    // ----------------
+    // These styling updates will be when there's a component such as graphs inside panels
+    // and they contain settings and other functionality that are independent and sometimes
+    // need to be included within a panel.
+
+    &__no-styles {
+        border: 0;
+        box-shadow: none;
+
+        .panel__header {
+            border: 0;
+
+            &--bottom-border {
+                border-bottom: 1px solid $color__blue-grey-100;
+            }
+        }
+
+        // .panel__body {
+        //   padding-top: $space__xx-small;
+        // }
+    }
+
+    &__fill {
+        min-height: 100%;
+        min-width: 100%;
+    }
+}

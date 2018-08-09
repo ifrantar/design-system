@@ -1,0 +1,81 @@
+.badge {
+    display: inline;
+    border-radius: $br-standard;
+    padding: $space__xx-small 0.35rem;
+    vertical-align: baseline;
+    text-align: center;
+    line-height: $font__line-height--base;
+    white-space: nowrap;
+    font-weight: $font__weight--bold;
+    font-size: 80.65%;
+
+    &__pill {
+        border-radius: $space__7x-large;
+    }
+
+    &__default {
+        background: $color__blue-grey-500;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__blue-grey-500;
+            color: $color__blue-grey-500;
+        }
+    }
+
+    &__information {
+        background: $color__light-blue-700;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__light-blue-700;
+            color: $color__light-blue-700;
+        }
+    }
+
+    &__success {
+        background: $color__green-700;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__green-700;
+            color: $color__green-700;
+        }
+    }
+
+    &__attention {
+        background: $color__yellow-800;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__yellow-800;
+            color: $color__yellow-800;
+        }
+    }
+
+    &__danger {
+        background: $color__red-600;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__red-600;
+            color: $color__red-600;
+        }
+    }
+
+    &__dark {
+        background: $color__blue-grey-900;
+        color: $color__white;
+
+        &--outline {
+            background: $color__white;
+            border: 1px solid $color__blue-grey-900;
+            color: $color__blue-grey-900;
+        }
+    }
+}

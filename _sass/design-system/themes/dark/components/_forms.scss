@@ -1,0 +1,28 @@
+.dark__ui {
+
+    .f {
+        &__textfield, &__select, &__textarea {
+            background: $color__dark-ui-800;
+            color: $color__white;
+        }
+
+        &:hover {
+            border-color: $color__input-fields--hover;
+        }
+
+        &:focus {
+            border-color: $color__primary-action;
+            background: $color__dark-ui-800;
+            color: $color__white;
+        }
+
+        &__select {
+            &--arrow {
+                &-m {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+}

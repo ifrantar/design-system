@@ -1,0 +1,1357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stellwagen Group</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" sizes="16x16" href="favicon.png">
+<link rel="shortcut icon" sizes="32x32" href="favicon@2x.png">
+
+<link href="/assets/main.css" rel="stylesheet" />
+<script src="/js/jquery.js"></script>
+<script src="/js/highlighter.js"></script>
+<script src="/js/scripts.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="/css/dracula.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="sidebar__logo">
+      <a class="sidebar__logo--emblem" href="/"> </a>
+      <span class="sidebar__logo--title">Design System</span>
+    </div>
+    <nav class="nav__main">
+      <ul class="nav__block">
+          
+            
+          
+            
+              <li class="nav__item "><a href="/badges/">Badges</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/banners/">Banners</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/buttons/">Buttons</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/cards/">Cards</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/colors/">Colors</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/form-elements/">Form elements</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/grid/">Grid</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/icons/">Icons</a></li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/input-addons/">Input Addons</a></li>
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/modals/">Modals</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/pagination/">Pagination</a></li>
+            
+          
+            
+              <li class="nav__item nav__item--active"><a href="/panels/">Panels</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/references/">References</a></li>
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/sliders/">Sliders</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/spinners/">Spinners</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/tables/">Tables</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/tabs/">Tabs</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/toasts/">Toasts</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/typography/">Typography</a></li>
+            
+          
+            
+          
+            
+          
+      </ul>
+    </nav>
+  </div>
+  <div class="content__wrapper">
+    <main class="main">
+
+
+<header class="main__header">
+  <h1 class="main__header--header">Panels</h1>
+  <p>Panel components is a substantial piece of our UI that contains several other components such as tables, segmented navigation, graphs and other elements where the user needs to interact within the space of a panel.</p>
+</header>
+<section class="main__block">
+  <h2>Sub components of the panel</h2>
+  <p><!-- react-text: 15 -->The panel is divided primarily of <!-- /react-text --><code>panel__header</code><!-- react-text: 17 -->, <!-- /react-text --><code>panel__body</code><!-- react-text: 19 --> and <!-- /react-text --><code>panel__footer</code><!-- react-text: 21 -->as demonstrated in the following example:<!-- /react-text --></p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <h3>Header</h3>
+          </div>
+          <div class="panel__body">
+            Body: This is where you'll find the main content of the panel
+          </div>
+          <div class="panel__footer">
+            Footer: Here you'll find ancilary action to the panel, such us pagination.
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;h3&gt;Header&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    Body: This is where you&#39;ll find the main content of the panel
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__footer&quot;&gt;
+    Footer: Here you&#39;ll find ancilary action to the panel, such us pagination.
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <p>The panel component should allow you to structure it in a flexible way. For instance you can render the panel simply with a <code>panel__body</code> should you not need <code>panel__header</code> or <code>panel__footer</code>. It should alwasy have a body, though. Most commonly you might not need the <code>panel__footer</code> as this is mostly used when the panel is used in the <a href="">Modal</a> component.</p>
+  <p>The <code>panel__header</code> always should have an <code>h3</code> to wrap its title.</p>
+</section>
+<section class="main__block">
+  <h2>Panel with table inside</h2>
+  <p>When including a table in a panel, you would need to include the <code>panel__body--with-table</code> class to remove the default padding.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+      <div>
+        <div class="panel">
+          <div class="panel__header">
+            <h3>Users</h3>
+          </div>
+          <div class="panel__body panel__body--with-table">
+            <table class="table table__easy table__inside-panel">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                  <th class="table__align--right">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ivan Frantar</td>
+                  <td>ivan.frantar@stelltec.com</td>
+                  <td><span class="badge badge__default">Enabled</span></td>
+                  <td class="table__align--right">
+                    <div class="actions">
+                      <a class="context__menu--js" href="#"><i class="material-icons">more_horiz</i></a>
+                      <ul class="context-menu cmjs context-menu--left" style="display: none;">
+                        <li class="context-menu__item">
+                          <a href="">Edit</a>
+                        </li>
+                        <li class="context-menu__item">
+                          <a href="">Remove</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Remo Hansen</td>
+                  <td>remo.hansen@stelltec.com</td>
+                  <td><span class="badge badge__information">Enabled</span></td>
+                  <td class="table__align--right">
+                    <div class="actions">
+                      <a href="#"><i class="material-icons">more_horiz</i></a>
+                      <ul class="context-menu context-menu--left" style="display: none;">
+                        <li class="context-menu__item">
+                          <a href="">Edit</a>
+                        </li>
+                        <li class="context-menu__item">
+                          <a href="">Remove</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dan Evison</td>
+                  <td>dan.evison@stelltec.com</td>
+                  <td><span class="badge badge__success">Enabled</span></td>
+                  <td class="table__align--right">
+                    <div class="actions">
+                      <a href="#"><i class="material-icons">more_horiz</i></a>
+                      <ul class="context-menu context-menu--left" style="display: none;">
+                        <li class="context-menu__item">
+                          <a href="">Edit</a>
+                        </li>
+                        <li class="context-menu__item">
+                          <a href="">Remove</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Steve Beaney</td>
+                  <td>steve.beaney@stelltec.com</td>
+                  <td><span class="badge badge__attention">Enabled</span></td>
+                  <td class="table__align--right">
+                    <div class="actions">
+                      <a href="#"><i class="material-icons">more_horiz</i></a>
+                      <ul class="context-menu context-menu--left" style="display: none;">
+                        <li class="context-menu__item">
+                          <a href="">Edit</a>
+                        </li>
+                        <li class="context-menu__item">
+                          <a href="">Remove</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Steve Beaney</td>
+                  <td>steve.beaney@stelltec.com</td>
+                  <td><span class="badge badge__danger">Enabled</span></td>
+                  <td class="table__align--right">
+                    <div class="actions">
+                      <a href="#"><i class="material-icons">more_horiz</i></a>
+                      <ul class="context-menu context-menu--left" style="display: none;">
+                        <li class="context-menu__item">
+                          <a href="">Edit</a>
+                        </li>
+                        <li class="context-menu__item">
+                          <a href="">Remove</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel__header&quot;&gt;
+    &lt;h3&gt;Users&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body panel__body--with-table&quot;&gt;
+    &lt;table class=&quot;table table__easy table__inside-panel&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Email&lt;/th&gt;
+          &lt;th&gt;Status&lt;/th&gt;
+          &lt;th class=&quot;table__align--right&quot;&gt;Actions&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Ivan Frantar&lt;/td&gt;
+          &lt;td&gt;ivan.frantar@stelltec.com&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;badge badge__default&quot;&gt;Enabled&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;table__align--right&quot;&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;a class=&quot;context__menu--js&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_horiz&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;context-menu cmjs context-menu--left&quot; style=&quot;display: none;&quot;&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Remo Hansen&lt;/td&gt;
+          &lt;td&gt;remo.hansen@stelltec.com&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;badge badge__information&quot;&gt;Enabled&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;table__align--right&quot;&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_horiz&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;context-menu context-menu--left&quot; style=&quot;display: none;&quot;&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Dan Evison&lt;/td&gt;
+          &lt;td&gt;dan.evison@stelltec.com&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;badge badge__success&quot;&gt;Enabled&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;table__align--right&quot;&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_horiz&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;context-menu context-menu--left&quot; style=&quot;display: none;&quot;&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Steve Beaney&lt;/td&gt;
+          &lt;td&gt;steve.beaney@stelltec.com&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;badge badge__attention&quot;&gt;Enabled&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;table__align--right&quot;&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_horiz&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;context-menu context-menu--left&quot; style=&quot;display: none;&quot;&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Steve Beaney&lt;/td&gt;
+          &lt;td&gt;steve.beaney@stelltec.com&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;badge badge__danger&quot;&gt;Enabled&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;table__align--right&quot;&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_horiz&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;context-menu context-menu--left&quot; style=&quot;display: none;&quot;&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;context-menu__item&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="main__block">
+  <h2>Panel with back navigation</h2>
+  <p>Panel might load content and transition into a different level.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <h3>Users</h3>
+            </div>
+          </div>
+          <div class="panel__body">
+            <p>Line of text</p>
+            <p>Line of text</p>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html hljs xml">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;h3&gt;Users&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;p&gt;Line of text&lt;/p&gt;
+    &lt;p&gt;Line of text&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="main__block">
+  <h2>Panel with spinners</h2>
+  <p>Panels might have spinners in two place:</p>
+  <ul class="list__ul">
+    <li>In the header</li>
+    <li>In the body</li>
+  </ul>
+  <h3>In the header</h3>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">
+              <h3>Fleet(45)</h3>
+            </div>
+            <div class="panel__actions-item">
+              <div class="spinner spinner__small spinner__small--default"></div>
+            </div>
+          </div>
+          <div class="panel__body">
+            <p>Line of text</p>
+            <p>Line of text</p>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html hljs xml">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;h3&gt;Fleet(45)&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;div class=&quot;spinner spinner__small spinner__small--default&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;p&gt;Line of text&lt;/p&gt;
+    &lt;p&gt;Line of text&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <h3>In the body</h3>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <h3>Fleet(45)</h3>
+          </div>
+          <div class="panel__body panel__body--with-loader" style="min-height: 200px;">
+            <div class="spinner spinner__small-cover spinner__small-cover--default"></div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html hljs xml">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;h3&gt;Fleet(45)&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body panel__body--with-loader&quot; style=&quot;min-height: 200px;&quot;&gt;
+    &lt;div class=&quot;spinner spinner__small-cover spinner__small-cover--default&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="main__block">
+  <h2>Panel with actionable buttons on header</h2>
+  <p>We will run into scenarios where we need to contain actions or behaviours within the panels such us expand/collaps the panel, include specific settings and even export/import into them. Here is an example that would allow great flexibility depending of the needs of panels.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <h3>Visualizations</h3>
+            </div>
+            <div class="panel__actions-item panel__actions-items--active">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M17.2928932,8.29289322 C17.6834175,7.90236893 18.3165825,7.90236893 18.7071068,8.29289322 C19.0976311,8.68341751 19.0976311,9.31658249 18.7071068,9.70710678 L12.7071068,15.7071068 C12.3165825,16.0976311 11.6834175,16.0976311 11.2928932,15.7071068 L5.29289322,9.70710678 C4.90236893,9.31658249 4.90236893,8.68341751 5.29289322,8.29289322 C5.68341751,7.90236893 6.31658249,7.90236893 6.70710678,8.29289322 L12,13.5857864 L17.2928932,8.29289322 Z"></path>
+                </g></svg></span>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;h3&gt;Visualizations&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item panel__actions-items--active&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M17.2928932,8.29289322 C17.6834175,7.90236893 18.3165825,7.90236893 18.7071068,8.29289322 C19.0976311,8.68341751 19.0976311,9.31658249 18.7071068,9.70710678 L12.7071068,15.7071068 C12.3165825,16.0976311 11.6834175,16.0976311 11.2928932,15.7071068 L5.29289322,9.70710678 C4.90236893,9.31658249 4.90236893,8.68341751 5.29289322,8.29289322 C5.68341751,7.90236893 6.31658249,7.90236893 6.70710678,8.29289322 L12,13.5857864 L17.2928932,8.29289322 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <h3>Actionable buttons triggering a contextual menu</h3>
+  <p>At times, you might need to have the flexibility to include contextual menus on some of the panel actions. Here's an example of it:</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <h3>Visualizations</h3>
+            </div>
+            <div class="panel__actions-item panel__actions-item--active">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item context-menu__container">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z"></path>
+                </g></svg></span>
+              <ul class="context-menu cmjs context-menu--left">
+                <li class="context-menu__item">
+                  <a href="">Edit</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="">Remove</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html hljs xml">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;h3&gt;Visualizations&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item panel__actions-item--active&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item context-menu__container&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+      &lt;ul class=&quot;context-menu cmjs context-menu--left&quot;&gt;
+        &lt;li class=&quot;context-menu__item&quot;&gt;
+          &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;context-menu__item&quot;&gt;
+          &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <h3>Panel header title with dropdown contextual menu</h3>
+  <p>There might be scenarios where you'd want to update something in the body in the panel by selecting a set of options from the title. Here's samples of how it would work.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <div class="header__select">
+                <h3>Loans tool</h3>
+                <div class="header__trigger">
+                  <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                    <g fill="inherit">
+                      <path d="M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z"></path>
+                    </g></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel__actions-item panel__actions-item--active">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z"></path>
+                </g></svg></span>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html hljs xml">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;div class=&quot;header__select&quot;&gt;
+        &lt;h3&gt;Loans tool&lt;/h3&gt;
+        &lt;div class=&quot;header__trigger&quot;&gt;
+          &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+            &lt;g fill=&quot;inherit&quot;&gt;
+              &lt;path d=&quot;M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item panel__actions-item--active&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <p>Here is with the menu expanded:</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <div class="header__select">
+                <h3>Visualizations</h3>
+                <div class="header__trigger context-menu__container">
+                  <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                    <g fill="inherit">
+                      <path d="M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z"></path>
+                    </g></svg></span>
+                  <ul class="context-menu cmjs context-menu--right">
+                    <li class="context-menu__item">
+                      <a href="">Edit</a>
+                    </li>
+                    <li class="context-menu__item">
+                      <a href="">Remove</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel__actions-item panel__actions-item--active">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z"></path>
+                </g></svg></span>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;div class=&quot;header__select&quot;&gt;
+        &lt;h3&gt;Visualizations&lt;/h3&gt;
+        &lt;div class=&quot;header__trigger context-menu__container&quot;&gt;
+          &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+            &lt;g fill=&quot;inherit&quot;&gt;
+              &lt;path d=&quot;M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+          &lt;ul class=&quot;context-menu cmjs context-menu--right&quot;&gt;
+            &lt;li class=&quot;context-menu__item&quot;&gt;
+              &lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;context-menu__item&quot;&gt;
+              &lt;a href=&quot;&quot;&gt;Remove&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item panel__actions-item--active&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="main__block">
+  <h2>Panel with no styles</h2>
+  <p>Panels are the core component of the chunk of content you'll be using on our apps. Those could be tables, lists, graphs, etc. There will be circumstances where you won't want to to show panels as panels but rather as simply chunks of content. Structurally they are composed of the same elements, but slightly different depending of the context.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel panel__no-styles">
+          <div class="panel__header">
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__title">
+              <div class="header__select">
+                <h3>Loans tool</h3>
+                <div class="header__trigger">
+                  <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                    <g fill="inherit">
+                      <path d="M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z"></path>
+                    </g></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel__actions-item panel__actions-item--active">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit">
+                  <path d="M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z"></path>
+                </g></svg></span>
+            </div>
+            <div class="panel__actions-item">
+              <span class="icon icon__size--medium icon__color--ui"><svg height="24px" viewbox="0 0 24 24" width="24px">
+                <g fill="inherit" stroke="none">
+                  <path d="M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z"></path>
+                </g></svg></span>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel panel__no-styles&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M15.7071068,17.2928932 C16.0976311,17.6834175 16.0976311,18.3165825 15.7071068,18.7071068 C15.3165825,19.0976311 14.6834175,19.0976311 14.2928932,18.7071068 L8.29289322,12.7071068 C7.90236893,12.3165825 7.90236893,11.6834175 8.29289322,11.2928932 L14.2928932,5.29289322 C14.6834175,4.90236893 15.3165825,4.90236893 15.7071068,5.29289322 C16.0976311,5.68341751 16.0976311,6.31658249 15.7071068,6.70710678 L10.4142136,12 L15.7071068,17.2928932 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;div class=&quot;header__select&quot;&gt;
+        &lt;h3&gt;Loans tool&lt;/h3&gt;
+        &lt;div class=&quot;header__trigger&quot;&gt;
+          &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+            &lt;g fill=&quot;inherit&quot;&gt;
+              &lt;path d=&quot;M7.20710678,10 L16.7928932,10 C17.0690356,10 17.2928932,10.2238576 17.2928932,10.5 C17.2928932,10.6326082 17.2402148,10.7597852 17.1464466,10.8535534 L12.3535534,15.6464466 C12.1582912,15.8417088 11.8417088,15.8417088 11.6464466,15.6464466 L6.85355339,10.8535534 C6.65829124,10.6582912 6.65829124,10.3417088 6.85355339,10.1464466 C6.94732158,10.0526784 7.07449854,10 7.20710678,10 Z&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item panel__actions-item--active&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M19.2473684,12.5741627 L19.3205742,12.5741627 C19.6376755,12.5741627 19.8947368,12.3171013 19.8947368,12 C19.8947368,11.6828987 19.6376755,11.4258373 19.3205742,11.4258373 L19.1780984,11.4258289 C18.2236247,11.4220222 17.3625516,10.8517751 16.9865514,9.97447329 C16.951833,9.89346661 16.9275108,9.80862197 16.9139997,9.72196107 C16.6260611,8.87363587 16.8358726,7.92656556 17.4781651,7.27003114 L17.5273831,7.2208134 C17.6351977,7.1131187 17.6957773,6.96698139 17.6957773,6.8145933 C17.6957773,6.66220522 17.6351977,6.5160679 17.526555,6.40754515 C17.4188603,6.29973058 17.272723,6.23915089 17.1203349,6.23915089 C16.9679468,6.23915089 16.8218095,6.29973058 16.7137009,6.40795929 L16.6566425,6.46492712 C15.9568181,7.14948206 14.9107924,7.33914606 14.0255267,6.94837685 C13.1482249,6.57237663 12.5779778,5.71130358 12.5741627,4.75263158 L12.5741627,4.67942584 C12.5741627,4.36232455 12.3171013,4.10526316 12,4.10526316 C11.6828987,4.10526316 11.4258373,4.36232455 11.4258373,4.67942584 L11.4258289,4.82190157 C11.4220222,5.77637535 10.8517751,6.6374484 9.97447329,7.01344862 C9.89346661,7.04816703 9.80862197,7.07248924 9.72196107,7.08600026 C8.87363587,7.37393893 7.92656556,7.16412739 7.27003114,6.52183489 L7.2208134,6.47261692 C7.1131187,6.36480235 6.96698139,6.30422266 6.8145933,6.30422266 C6.66220522,6.30422266 6.5160679,6.36480235 6.40754515,6.47344498 C6.29973058,6.58113967 6.23915089,6.72727699 6.23915089,6.87966507 C6.23915089,7.03205316 6.29973058,7.17819047 6.40795929,7.28629908 L6.46492712,7.34335746 C7.14948206,8.0431819 7.33914606,9.0892076 6.96879398,9.92315713 C6.62937244,10.8460332 5.76029247,11.4676268 4.75263158,11.4909091 L4.67942584,11.4909091 C4.36232455,11.4909091 4.10526316,11.7479705 4.10526316,12.0650718 C4.10526316,12.3821731 4.36232455,12.6392344 4.67942584,12.6392344 L4.82190157,12.6392428 C5.77637535,12.6430496 6.6374484,13.2132966 7.00894626,14.080247 C7.40421783,14.9758642 7.21455383,16.0218899 6.52183489,16.7299689 L6.47261692,16.7791866 C6.36480235,16.8868813 6.30422266,17.0330186 6.30422266,17.1854067 C6.30422266,17.3377948 6.36480235,17.4839321 6.47344498,17.5924549 C6.58113967,17.7002694 6.72727699,17.7608491 6.87966507,17.7608491 C7.03205316,17.7608491 7.17819047,17.7002694 7.28629908,17.5920407 L7.34335746,17.5350729 C8.0431819,16.8505179 9.0892076,16.6608539 9.92315713,17.031206 C10.8460332,17.3706276 11.4676268,18.2397075 11.4909091,19.2473684 L11.4909091,19.3205742 C11.4909091,19.6376755 11.7479705,19.8947368 12.0650718,19.8947368 C12.3821731,19.8947368 12.6392344,19.6376755 12.6392344,19.3205742 L12.6392428,19.1780984 C12.6430496,18.2236247 13.2132966,17.3625516 14.080247,16.9910537 C14.9758642,16.5957822 16.0218899,16.7854462 16.7299689,17.4781651 L16.7791866,17.5273831 C16.8868813,17.6351977 17.0330186,17.6957773 17.1854067,17.6957773 C17.3377948,17.6957773 17.4839321,17.6351977 17.5924549,17.526555 C17.7002694,17.4188603 17.7608491,17.272723 17.7608491,17.1203349 C17.7608491,16.9679468 17.7002694,16.8218095 17.5920407,16.7137009 L17.5350729,16.6566425 C16.851834,15.9581635 16.661585,14.9148132 17.0538522,14.0203425 C17.4310195,13.1459782 18.2905868,12.5779703 19.2473684,12.5741627 Z M17.0561255,14.0151752 L17.0516231,14.0255267 C17.0523646,14.0237968 17.0531079,14.0220681 17.053853,14.0203406 C17.0546078,14.0186195 17.0553656,14.0168971 17.0561255,14.0151752 Z M19.1822967,9.32057416 L19.3205742,9.32057416 C20.8003802,9.32057416 22,10.520194 22,12 C22,13.479806 20.8003802,14.6794258 19.3205742,14.6794258 L19.2515666,14.6794175 C19.1361907,14.6798776 19.0321049,14.7488086 18.9866544,14.8548561 C18.9343719,14.973469 18.9572983,15.0999116 19.0318827,15.1762512 L19.0802724,15.2246411 C19.5834071,15.7272164 19.8661123,16.4091905 19.8661123,17.1203349 C19.8661123,17.8314793 19.5834071,18.5134535 19.0811005,19.0152006 C18.5785252,19.5183353 17.8965511,19.8010405 17.1854067,19.8010405 C16.4742623,19.8010405 15.7922882,19.5183353 15.2901268,19.0156148 C15.1649834,18.8922266 15.0385407,18.8693002 14.9199278,18.9215826 C14.8138804,18.9670332 14.7449494,19.0711189 14.7444976,19.1822967 L14.7444976,19.3205742 C14.7444976,20.8003802 13.5448778,22 12.0650718,22 C10.5852657,22 9.38564593,20.8003802 9.38564593,19.3205742 C9.38315424,19.1531541 9.30801655,19.0481005 9.13479246,18.982152 C9.02653105,18.9343719 8.90008838,18.9572983 8.82374876,19.0318827 L8.77535885,19.0802724 C8.27278362,19.5834071 7.59080947,19.8661123 6.87966507,19.8661123 C6.16852067,19.8661123 5.48654653,19.5834071 4.98479935,19.0811005 C4.48166469,18.5785252 4.19895951,17.8965511 4.19895951,17.1854067 C4.19895951,16.4742623 4.48166469,15.7922882 4.98438521,15.2901268 C5.10777343,15.1649834 5.13069985,15.0385407 5.07841741,14.9199278 C5.03296683,14.8138804 4.92888108,14.7449494 4.81770335,14.7444976 L4.67942584,14.7444976 C3.19961981,14.7444976 2,13.5448778 2,12.0650718 C2,10.5852657 3.19961981,9.38564593 4.67942584,9.38564593 C4.8468459,9.38315424 4.95189953,9.30801655 5.017848,9.13479246 C5.06562808,9.02653105 5.04270166,8.90008838 4.96811726,8.82374876 L4.91972758,8.77535885 C4.41659292,8.27278362 4.13388774,7.59080947 4.13388774,6.87966507 C4.13388774,6.16852067 4.41659292,5.48654653 4.91889952,4.98479935 C5.42147476,4.48166469 6.1034489,4.19895951 6.8145933,4.19895951 C7.5257377,4.19895951 8.20771185,4.48166469 8.70987317,4.98438521 C8.83501661,5.10777343 8.96145928,5.13069985 9.06972069,5.08291977 C9.11957881,5.06091539 9.17094157,5.04287257 9.22333175,5.02889192 C9.28383311,4.97537707 9.3202462,4.89840877 9.32057416,4.81770335 L9.32057416,4.67942584 C9.32057416,3.19961981 10.520194,2 12,2 C13.479806,2 14.6794258,3.19961981 14.6794258,4.67942584 L14.6794175,4.74843336 C14.6798776,4.86380931 14.7488086,4.96789506 14.8652075,5.017848 C14.973469,5.06562808 15.0999116,5.04270166 15.1762512,4.96811726 L15.2246411,4.91972758 C15.7272164,4.41659292 16.4091905,4.13388774 17.1203349,4.13388774 C17.8314793,4.13388774 18.5134535,4.41659292 19.0152006,4.91889952 C19.5183353,5.42147476 19.8010405,6.1034489 19.8010405,6.8145933 C19.8010405,7.5257377 19.5183353,8.20771185 19.0156148,8.70987317 C18.8922266,8.83501661 18.8693002,8.96145928 18.9170802,9.06972069 C18.9390846,9.11957881 18.9571274,9.17094157 18.9711081,9.22333175 C19.0246229,9.28383311 19.1015912,9.3202462 19.1822967,9.32057416 Z M12,15.492823 C10.0709671,15.492823 8.50717703,13.9290329 8.50717703,12 C8.50717703,10.0709671 10.0709671,8.50717703 12,8.50717703 C13.9290329,8.50717703 15.492823,10.0709671 15.492823,12 C15.492823,13.9290329 13.9290329,15.492823 12,15.492823 Z M12,13.3875598 C12.7663281,13.3875598 13.3875598,12.7663281 13.3875598,12 C13.3875598,11.2336719 12.7663281,10.6124402 12,10.6124402 C11.2336719,10.6124402 10.6124402,11.2336719 10.6124402,12 C10.6124402,12.7663281 11.2336719,13.3875598 12,13.3875598 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot;&gt;
+          &lt;path d=&quot;M5.57723577,13.475029 C6.09039233,13.475029 6.50638792,13.8910246 6.50638792,14.4041812 C6.50638792,14.9173377 6.09039233,15.3333333 5.57723577,15.3333333 L4.69454123,15.3333333 C3.2063872,15.3333333 2,14.1269461 2,12.6387921 L2,4.69454123 C2,3.2063872 3.2063872,2 4.69454123,2 L12.6387921,2 C14.1269461,2 15.3333333,3.2063872 15.3333333,4.69454123 L15.3333333,5.57723577 C15.3333333,6.09039233 14.9173377,6.50638792 14.4041812,6.50638792 C13.8910246,6.50638792 13.475029,6.09039233 13.475029,5.57723577 L13.475029,4.69454123 C13.475029,4.23270033 13.100633,3.8583043 12.6387921,3.8583043 L4.69454123,3.8583043 C4.23270033,3.8583043 3.8583043,4.23270033 3.8583043,4.69454123 L3.8583043,12.6387921 C3.8583043,13.100633 4.23270033,13.475029 4.69454123,13.475029 L5.57723577,13.475029 Z M11.4916034,10.5714286 C10.9834049,10.5714286 10.5714286,10.9834049 10.5714286,11.4916034 L10.5714286,19.1750633 C10.5714286,19.6832618 10.9834049,20.0952381 11.4916034,20.0952381 L19.1750633,20.0952381 C19.6832618,20.0952381 20.0952381,19.6832618 20.0952381,19.1750633 L20.0952381,11.4916034 C20.0952381,10.9834049 19.6832618,10.5714286 19.1750633,10.5714286 L11.4916034,10.5714286 Z M11.4541231,8.66666667 L19.2125436,8.66666667 C20.7520132,8.66666667 22,9.91465343 22,11.4541231 L22,19.2125436 C22,20.7520132 20.7520132,22 19.2125436,22 L11.4541231,22 C9.91465343,22 8.66666667,20.7520132 8.66666667,19.2125436 L8.66666667,11.4541231 C8.66666667,9.91465343 9.91465343,8.66666667 11.4541231,8.66666667 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-item&quot;&gt;
+      &lt;span class=&quot;icon icon__size--medium icon__color--ui&quot;&gt;&lt;svg height=&quot;24px&quot; viewbox=&quot;0 0 24 24&quot; width=&quot;24px&quot;&gt;
+        &lt;g fill=&quot;inherit&quot; stroke=&quot;none&quot;&gt;
+          &lt;path d=&quot;M12,21 C10.8954305,21 10,20.1045695 10,19 C10,17.8954305 10.8954305,17 12,17 C13.1045695,17 14,17.8954305 14,19 C14,20.1045695 13.1045695,21 12,21 Z M12,7 C10.8954305,7 10,6.1045695 10,5 C10,3.8954305 10.8954305,3 12,3 C13.1045695,3 14,3.8954305 14,5 C14,6.1045695 13.1045695,7 12,7 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="main__block">
+  <h2>Panel with header buttons</h2>
+  <p>There might be scenarios where you'd need to have buttons in the header. Example could be a set of segmented navigation or tab navigation or if you need to send form information.</p>
+  <section class="demos">
+    <div class="demos__header">
+      <h4>Example</h4><a class="code__action"><span class="icon icon__size--medium icon__color--action"><svg height="24px" viewbox="0 0 24 24" width="24px">
+      <g fill="inherit">
+        <path d="M9.32923367,16.8036682 C9.71565227,17.1644938 9.71565227,17.7495076 9.32923367,18.1103332 C8.94281508,18.4711588 8.31630675,18.4711588 7.92988816,18.1103332 L2.28981395,12.8438087 C1.90339535,12.4829831 1.90339535,11.8979693 2.28981395,11.5371437 L7.92988816,6.27061918 C8.31630675,5.90979361 8.94281508,5.90979361 9.32923367,6.27061918 C9.71565227,6.63144475 9.71565227,7.21645859 9.32923367,7.57728416 L4.38883222,12.1904762 L9.32923367,16.8036682 Z M14.6707663,7.57728416 C14.2843477,7.21645859 14.2843477,6.63144475 14.6707663,6.27061918 C15.0571849,5.90979361 15.6836932,5.90979361 16.0701118,6.27061918 L21.7101861,11.5371437 C22.0966046,11.8979693 22.0966046,12.4829831 21.7101861,12.8438087 L16.0701118,18.1103332 C15.6836932,18.4711588 15.0571849,18.4711588 14.6707663,18.1103332 C14.2843477,17.7495076 14.2843477,17.1644938 14.6707663,16.8036682 L19.6111678,12.1904762 L14.6707663,7.57728416 Z"></path>
+      </g></svg></span></a>
+    </div>
+    <div class="demos__body">
+
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">
+              <h3>Cashflows</h3>
+            </div>
+            <div class="panel__actions-buttons">
+              <a class="btn btn__neutral btn__neutral--outline btn__size-s" href="#">Settings</a><a class="btn btn__neutral btn__neutral--outline btn__size-s" href="#">Activity</a><a class="btn btn__neutral btn__neutral--outline btn__size-s" href="#">Trends</a>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="grid grid__gutter grid__1-2">
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 1
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="demo-grid">
+                  Visualization graphic 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="demos__code">
+      <div class="code__samples">
+        <pre><code class="html">
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;div class=&quot;panel__title&quot;&gt;
+      &lt;h3&gt;Cashflows&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel__actions-buttons&quot;&gt;
+      &lt;a class=&quot;btn btn__neutral btn__neutral--outline btn__size-s&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+      &lt;a class=&quot;btn btn__neutral btn__neutral--outline btn__size-s&quot; href=&quot;#&quot;&gt;Activity&lt;/a&gt;
+      &lt;a class=&quot;btn btn__neutral btn__neutral--outline btn__size-s&quot; href=&quot;#&quot;&gt;Trends&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;div class=&quot;grid grid__gutter grid__1-2&quot;&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 1
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;div class=&quot;demo-grid&quot;&gt;
+          Visualization graphic 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+</main>
+</div>
+
+<!-- <footer class="footer">
+  <ul class="footer__company">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="/news/">News</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        
+      
+  </ul>
+  <p>&copy; 2016 - 2018 Copyright Stellwagen Group. All rights reserved.</p>
+
+</footer> -->
+
+<script>
+  (function () {
+    var codeItems = document.querySelectorAll(".code__action");
+    codeItems.forEach(function (item) {
+      item.addEventListener("click", function(e) {
+        const target = e.currentTarget;
+        const parent = target.parentElement.parentElement;
+        parent.classList.toggle("demos__expanded");
+        const codeElement = parent.querySelector(".demos__code");
+        codeElement.classList.toggle("demos__code--show");
+      });
+    });
+    })();
+</script>
+
+</body>
+</html>
+

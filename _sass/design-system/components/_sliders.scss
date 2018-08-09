@@ -1,0 +1,163 @@
+.slider {
+
+    &__wrapper {
+        display:flex;
+        align-items: center;
+        padding: $space__x-small;
+
+        &--with-textfields {
+
+            .slider__container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+        }
+
+        &--no-flex {
+          display: block;
+          float: left;
+          width: 100%;
+        }
+    }
+
+    &__container {
+      position: relative;
+      padding: $space__x-small;
+      width: 100%;
+      clear: both;
+
+      @include clearfix();
+    }
+
+    &__tracker {
+        position: absolute;
+        right: $space__x-small;
+        left: $space__x-small;
+
+        height: 1px;
+        background: $color__grey-300;
+        border-radius: 1px;
+
+        &--range {
+            background: $color__black;
+
+            .slider__trail {
+                background: $color__grey-300;
+            }
+        }
+    }
+
+    &__trail {
+        position: relative;
+        height: 1px;
+        background: $color__black;
+        border-radius: 4px;
+        width: 200px;
+
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right;
+
+            .slider__handle {
+              left: -9px;
+            }
+        }
+        
+    }
+
+    &__handle {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background: $color__black;
+        transition: background linear 80ms 100ms; // 80ms = ~5 frames, delayed by 100ms (so that single click doesn't toggles style change
+        position: absolute;
+        top: -7px;
+        right: -9px;
+        border: 2px solid $color__white;
+        display: flex;
+
+        .slider__value-field, .slider__value-label {
+            position: absolute;
+            top: 20px;
+            left: -38px;
+        }
+
+        .slider__value-label {
+          left: -15px;
+        }
+
+        &--left {
+            left: -9px;
+        }
+
+        &--right {
+            right: -9px;
+        }
+
+        &--active {
+            background: $color__blue-grey-800;
+        }
+    }
+
+    &__pin {
+        background: $color__black;
+        border-radius: $br-standard;
+        color: white;
+        position: absolute;
+        top: -35px;
+        padding-bottom: 0.118rem;
+        width: 40px;
+        left: -15px;
+        text-align: center;
+
+        &::after {
+            content: " ";
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid $color__black;
+            position: absolute;
+            top: 20px;
+            left: 12px;
+        }
+    }
+
+    &__value {
+
+        &-field, &-label {
+
+            width: $space__6x-large;
+
+            &:first-child {
+                margin-right: $space__x-small;
+            }
+
+            &:last-child {
+                margin-left: $space__x-small;
+            }
+
+            &--left {
+                float: left;
+            }
+
+            &--right {
+                float: right;
+            }
+
+            .f__textfield {
+                padding-right: $space__x-small;
+            }
+        }
+
+        &-label {
+            width: auto;
+        }
+    }
+
+}

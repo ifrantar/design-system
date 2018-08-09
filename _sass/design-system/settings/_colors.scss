@@ -1,0 +1,248 @@
+// Core UI color palette 
+
+// Red
+
+$color__red-500              : #F44336 !default;
+
+$color__red-50               : #FFEBEE !default;
+$color__red-100              : #FFCDD2 !default;
+$color__red-200              : #EF9A9A !default;
+$color__red-300              : #E57373 !default;
+$color__red-400              : #EF5350 !default;
+$color__red-600              : #E53935 !default;
+$color__red-700              : #D32F2F !default;
+$color__red-800              : #C62828 !default;
+$color__red-900              : #B71C1C !default;
+$color__red-1000             : #562828 !default;
+
+
+// Orange
+
+$color__orange-500           : #FF9800 !default;
+
+$color__orange-50            : #FFF3E0 !default;
+$color__orange-100           : #FFE0B2 !default;
+$color__orange-200           : #FFCC80 !default;
+$color__orange-300           : #FFB74D !default;
+$color__orange-400           : #FFA726 !default;
+$color__orange-600           : #FB8C00 !default;
+$color__orange-700           : #F57C00 !default;
+$color__orange-800           : #EF6C00 !default;
+$color__orange-900           : #E65100 !default;
+$color__orange-1000          : #5B2000 !default;
+
+
+// Ligh Blue
+
+$color__light-blue-500       : #03A9F4 !default;
+
+$color__light-blue-50        : #E1F5FE !default;
+$color__light-blue-100       : #B3E5FC !default;
+$color__light-blue-200       : #81D4FA !default;
+$color__light-blue-300       : #4FC3F7 !default;
+$color__light-blue-400       : #29B6F6 !default;
+$color__light-blue-600       : #039BE5 !default;
+$color__light-blue-700       : #0288D1 !default;
+$color__light-blue-800       : #0277BD !default;
+$color__light-blue-900       : #01579B !default;
+
+
+// Indigo
+
+$color__indigo-500           : #3F51B5 !default;
+
+$color__indigo-50            : #E8EAF6 !default;
+$color__indigo-100           : #C5CAE9 !default;
+$color__indigo-200           : #9FA8DA !default;
+$color__indigo-300           : #7986CB !default;
+$color__indigo-400           : #5C6BC0 !default;
+$color__indigo-600           : #3949AB !default;
+$color__indigo-700           : #303F9F !default;
+$color__indigo-800           : #283593 !default;
+$color__indigo-900           : #1A237E !default;
+
+
+// Green
+
+$color__green-500            : #4CAF50 !default;
+
+$color__green-50             : #E8F5E9 !default;
+$color__green-100            : #C8E6C9 !default;
+$color__green-200            : #A5D6A7 !default;
+$color__green-300            : #81C784 !default;
+$color__green-400            : #66BB6A !default;
+$color__green-600            : #43A047 !default;
+$color__green-700            : #388E3C !default;
+$color__green-800            : #2E7D32 !default;
+$color__green-900            : #1B5E20 !default;
+
+
+// Teal
+
+$color__teal-500             : #009695 !default;
+ 
+$color__teal-50              : #E0F2F2 !default;
+$color__teal-100             : #B2DFDD !default;
+$color__teal-200             : #80CBC6 !default;
+$color__teal-300             : #4DB6B0 !default;
+$color__teal-400             : #26A6A3 !default;
+$color__teal-600             : #008989 !default;
+$color__teal-700             : #007976 !default;
+$color__teal-800             : #006969 !default;
+$color__teal-900             : #004D4B !default;
+
+
+// Yellow
+
+$color__yellow-500           : #FFEB3B !default;
+
+$color__yellow-50            : #FFFDE7 !default;
+$color__yellow-100           : #FFF9C4 !default;
+$color__yellow-200           : #FFF59D !default;
+$color__yellow-300           : #FFF176 !default;
+$color__yellow-400           : #FFEE58 !default;
+$color__yellow-600           : #FDD835 !default;
+$color__yellow-700           : #FBC02D !default;
+$color__yellow-800           : #F9A825 !default;
+$color__yellow-900           : #F57F17 !default;
+$color__yellow-1000          : #6A3200 !default;
+
+
+// Blue Grey
+
+$color__blue-grey-500        : #6F838D !default;
+
+$color__blue-grey-50         : #F7F8F9 !default;
+$color__blue-grey-100        : #E8EBED !default;
+$color__blue-grey-200        : #D0D6D9 !default;
+$color__blue-grey-300        : #B9C3C7 !default;
+$color__blue-grey-400        : #94A3AA !default;
+$color__blue-grey-600        : #5E6F77 !default;
+$color__blue-grey-700        : #49565D !default;
+$color__blue-grey-800        : #3A454A !default;
+$color__blue-grey-900        : #242B2E !default;
+
+
+// Grey
+
+$color__grey-500             : #9E9E9E !default;
+
+$color__grey-50              : #FAFAFA !default;
+$color__grey-100             : #F5F5F5 !default;
+$color__grey-200             : #EEEEEE !default;
+$color__grey-300             : #E0E0E0 !default;
+$color__grey-400             : #BDBDBD !default;
+$color__grey-600             : #757575 !default;
+$color__grey-700             : #616161 !default;
+$color__grey-800             : #424242 !default;
+$color__grey-900             : #212121 !default;
+
+
+// Black & White
+
+$color__black                : #000000 !default;
+$color__white                : #FFFFFF !default;
+
+// Brands
+
+$color__google               : #D34C37 !default;
+$color__office-365           : #D6552E !default;
+$color__linkedin             : #3076B0 !default;
+$color__google--hover        : #B03926 !default;
+$color__office-365--hover    : #B33F1C !default;
+$color__linkedin--hover      : #215C8D !default;
+
+
+
+// **********************************************
+// From here colors are composed based on usage
+// with semantic names for the UI
+// ***********************************************
+
+// UI colors
+
+$color__faint-green                 : $color__green-100 !default;
+$color__faint-yellow                : $color__yellow-300 !default;
+$color__faint-red                   : $color__red-200 !default;
+$color__faint-blue                  : $color__light-blue-50 !default;
+$color__faint-grey                  : $color__blue-grey-100 !default;
+$color__faint-orange                : $color__orange-100 !default;
+$color__faint-teal                  : $color__teal-100 !default;
+$color__faint-red                   : $color__red-50 !default;
+
+
+// Typography colors 
+
+$color__typography-headings         : $color__black !default;
+$color__typography-copy             : $color__black !default; // $color__blue-grey-700
+$color__typography-faded            : $color__black !default;
+
+$color__typography-green            : $color__green-900 !default;
+$color__typography-yellow           : $color__yellow-1000 !default;
+$color__typography-red              : $color__red-900 !default;
+$color__typography-blue             : $color__light-blue-900 !default;
+$color__typography-grey             : $color__blue-grey-700 !default;
+$color__typography-orange           : $color__orange-1000 !default;
+$color__typography-teal             : $color__teal-900 !default;
+$color__typography-red              : $color__red-1000 !default;
+
+
+// Form colors
+
+$color__form-labels                 : $color__grey-900 !default;
+$color__form-placeholder            : $color__typography-faded !default;
+$color__form-error                  : $color__red-500 !default;
+$color__form-success                : $color__green-500 !default;
+$color__form-warning                : $color__yellow-900 !default;
+$color__form-active                 : $color__light-blue-500 !default;
+$color__input-fields                : $color__grey-400 !default;
+$color__input-fields--hover         : $color__grey-600 !default;
+$color__form-text                   : $color__grey-900 !default;
+$color__form-text-secondary         : $color__grey-500 !default;
+$color__form-focus                  : $color__light-blue-700 !default;
+
+// Tables
+
+$color__table--borders              : $color__grey-100 !default;
+$color__table--thead-background     : $color__grey-50 !default;
+$color__table--th                   : $color__grey-500 !default;
+
+
+// Interactive colors
+
+$color__primary-action              : $color__light-blue-500 !default;
+$color__primary-action--hover       : $color__light-blue-700 !default;
+$color__primary-action--active      : $color__light-blue-800 !default;
+$color__primary-action--border      : $color__light-blue-600 !default;
+
+
+$color__destructive-action          : $color__red-500 !default;
+$color__destructive-action--hover   : $color__red-700 !default;
+$color__destructive-action--active  : $color__red-800 !default;
+$color__destructive-action--border  : $color__red-600 !default;
+
+$color__label--destructive--outline : $color__red-500 !default;
+$color__label--destructive--hover   : $color__red-700 !default;
+$color__label--destructive--active  : $color__red-800 !default;
+
+$color__secondary-action            : $color__grey-900 !default;
+$color__secondary-action--hover     : $color__black !default;
+$color__secondary-action--active    : $color__grey-900 !default;
+$color__secondary-action--border    : $color__black !default;
+
+$color__neutral-action              : $color__grey-100 !default;
+$color__neutral-action--border      : $color__grey-200 !default;
+$color__neutral-action--hover       : $color__grey-200 !default;
+$color__neutral-action--active      : $color__grey-500 !default;
+
+$color__label--neutral              : $color__grey-800 !default;
+$color__label--neutral--hover       : $color__grey-900 !default;
+
+// Notification badge
+
+$color__notification-badge          : $color__red-500 !default;
+
+
+// Navbar background
+
+$color__navbar-bg                   : #3a4654 !default;

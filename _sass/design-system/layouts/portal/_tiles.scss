@@ -1,0 +1,83 @@
+.app {
+    &__graphic {
+
+        width: 100%;
+        min-height: 120px;
+        background: $color__blue-grey-600;
+        margin-bottom: $space__medium;
+
+        &--default {
+            background: url(/public/assets/images/stellwagen_portal/default-icon.svg) 50% 50% no-repeat;  
+        }
+
+        &--simple-calc-app {
+            background: url(/public/assets/images/stellwagen_portal/simple-calc-icon.svg) 50% 50% no-repeat;  
+        }
+
+        &--examples {
+            background: url(/public/assets/images/stellwagen_portal/examples-icon.svg) 50% 50% no-repeat;
+            
+            &--app {
+                background: url(/public/assets/images/stellwagen_portal/single-app-example-icon.svg) 50% 50% no-repeat;
+            }
+        }
+
+        &--aircraft-tracker {
+            background: url(/public/assets/images/stellwagen_portal/aircraft-tracker-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--aircraft-logs {
+            background: url(/public/assets/images/stellwagen_portal/logs-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--portfolio-analyser {
+            background: url(/public/assets/images/stellwagen_portal/portfolio-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--snapshot-editor {
+            background: url(/public/assets/images/stellwagen_portal/tools-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--airline-credit-map {
+            background: url(/public/assets/images/stellwagen_portal/credit-map-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--workshops {
+            background: url(/public/assets/images/stellwagen_portal/workshop-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--loans-tool {
+            background: url(/public/assets/images/stellwagen_portal/loans-icon.svg) 50% 50% no-repeat;
+        }
+
+        &--pricing-tool {
+            background: url(/public/assets/images/stellwagen_portal/pricing-tool.svg) 50% 50% no-repeat;
+        }
+
+        &--loan-lease {
+            background: url(/public/assets/images/stellwagen_portal/loan-lease-icon.svg) 50% 50% no-repeat;
+        }
+
+        /* ? */
+        &--funds {
+            background: url(/public/assets/images/stellwagen_portal/funds2.svg) 50% 50% no-repeat;
+        }
+
+        /* ? */
+        &--calculator {
+            background: url(/public/assets/images/stellwagen_portal/calculator.svg) 50% 50% no-repeat;
+        }
+
+        &--design-system {
+            background: url(/public/assets/images/stellwagen_portal/design-system-icon.svg) 50% 50% no-repeat;
+        }
+    }
+}
+
+.material-icons {
+    top:7px;
+}
+
+a {
+    text-decoration: none;
+}

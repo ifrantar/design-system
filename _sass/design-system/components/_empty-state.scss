@@ -1,0 +1,28 @@
+.empty-state {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: $space__7x-large;
+    
+    &__icon {
+
+    }
+
+    &__message {
+
+        p {
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+        
+    }
+
+    
+}

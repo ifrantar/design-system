@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{{ site.title }}</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" sizes="16x16" href="favicon.png">
+<link rel="shortcut icon" sizes="32x32" href="favicon@2x.png">
+
+<link href="/assets/main.css" rel="stylesheet" />
+<script src="/js/jquery.js"></script>
+<script src="/js/highlighter.js"></script>
+<script src="/js/scripts.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="/css/dracula.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="sidebar__logo">
+      <a class="sidebar__logo--emblem" href="/"> </a>
+      <span class="sidebar__logo--title">Design System</span>
+    </div>
+    <nav class="nav__main">
+      <ul class="nav__block">
+          {% for pages in site.pages %}
+            {% if pages.navigation == 'main'} %}
+              <li class="nav__item {% if page.url == pages.url %}nav__item--active{% endif %}"><a href="{{ pages.url }}">{{ pages.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="content__wrapper">
+    <main class="main">

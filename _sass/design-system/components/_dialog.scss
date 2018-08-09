@@ -1,0 +1,75 @@
+ .dialog {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: $z-index__modal;
+
+    // Use flexbox for centering to avoid blurring due to antialiasing after transform
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* panel overrides for modal */
+
+    .panel {
+        $spacing_to_edges: $space__small;
+        margin: $spacing_to_edges;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        text-align:left;
+
+        // Horizontal fit
+        min-width: 320px;
+        max-width: calc(100% - #{2 * $spacing_to_edges});
+
+        // Vertical fit
+        max-height: calc(100% - #{2 * $spacing_to_edges});
+
+        &__body {
+            padding:24px;
+            flex-grow: 1;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        &__footer {
+            background: $color__blue-grey-50;
+        }
+    }
+
+    &__open { // Class put on root element when dialog is open
+        overflow: hidden;
+    }
+
+    &--full-screen {
+        .panel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: none;
+            margin: 0;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 0;
+            border: 0;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 100%;
+
+            &__body {
+                height: calc(100% - 125px);
+                max-height: 100%;
+                flex-grow: 1;
+            }
+        }
+    }
+}

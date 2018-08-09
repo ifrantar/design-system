@@ -1,0 +1,65 @@
+*:focus {
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+select,
+textarea {
+    font: inherit;
+    margin: 0;
+    color: $color__form-text;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition-property: color, background-color, border-color, border-radius;
+    transition-duration: 0.2s;
+    @include border-radius(4px);
+    width: 100%;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="search"]:disabled,
+input[type="number"]:disabled,
+select:disabled,
+textarea:disabled {
+    border: 1px solid $color__blue-grey-100;
+    color: $color__form-text;
+}
+
+// input[type="radio"],
+// input[type="checkbox"] {
+//     display:none;
+// }
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: $space__x-small;
+}
+
+label {
+    display:block;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    padding-top: $space__x-small;
+}
+
+/* these had $color-ui-dark */
+
+select {
+    padding-right: $space__large;
+    max-width: 100%;
+    color: $color__form-text;
+    background: $color__white;
+    border-radius: $br-standard;
+    border: 1px solid $color__input-fields;
+    padding-left: 10px;
+}

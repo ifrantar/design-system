@@ -1,0 +1,185 @@
+.spinner {
+
+    &:before {
+        content: '';
+        box-sizing: border-box;
+        border-radius: 50%;
+        animation: spinner .6s linear infinite;
+    }
+
+    &__large {
+        position:absolute;
+        top:0; left:0; right:0; bottom:0;
+        background:rgba(255,255,255,.6);
+        width:100%;
+        height:100%;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            margin-top: -60px;
+            margin-left: -60px;
+            border-right: 4px solid transparent;
+        }
+
+        &--default {
+            &:before {
+                border-top: 4px solid $color__blue-grey-500;
+            }
+        }
+
+        &--primary {
+            &:before {
+                border-top: 4px solid $color__light-blue-500;
+            }
+        }
+    }
+
+    &__medium {
+        &:before {
+            display:block;
+            width: 60px;
+            height: 60px;
+            border-right: 2px solid transparent;
+        }
+        &--default {
+            &:before {
+                border-top: 2px solid $color__blue-grey-500;
+            }
+        }
+
+        &--primary {
+            &:before {
+                border-top: 2px solid $color__light-blue-500;
+            }
+        }
+
+        &-cover {
+            position:absolute;
+            top:0; left:0; right:0; bottom:0;
+            background:rgba(255,255,255,.6);
+            width:100%;
+            height:100%;
+
+            &:before {
+                position: absolute;
+                top:50%;
+                left:50%;
+                width: 60px;
+                height: 60px;
+                margin-left:-30px;
+                margin-top:-30px;
+                border-right: 2px solid transparent;
+            }
+
+            &--default {
+                &:before {
+                    border-top: 2px solid $color__blue-grey-500;
+                }
+            }
+
+            &--primary {
+                &:before {
+                    border-top: 2px solid $color__light-blue-500;
+                }
+            }
+        }
+    }
+
+    &__small {
+        &:before {
+            display:block;
+            width: 20px;
+            height: 20px;
+            border-right: 2px solid transparent;
+        }
+
+        &--default {
+            &:before {
+                border-top: 2px solid $color__blue-grey-500;
+            }
+        }
+
+        &--primary {
+            &:before {
+                border-top: 2px solid $color__light-blue-500;
+            }
+        }
+
+        &--white {
+            &:before {
+                border-top: 2px solid $color__white;
+            }
+        }
+
+        &--destructive {
+            &:before {
+                border-top: 2px solid $color__red-500;
+            }
+        }
+
+        &-cover {
+            position:absolute;
+            top:0; left:0; right:0; bottom:0;
+            background:rgba(255,255,255,.6);
+            width:100%;
+            height:100%;
+
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left:-15px;
+                margin-top:-15px;
+                border-right: 2px solid transparent;
+            }
+
+            &--default {
+                &:before {
+                    border-top: 2px solid $color__blue-grey-500;
+                }
+            }
+
+            &--primary {
+                &:before {
+                    border-top: 2px solid $color__light-blue-500;
+                }
+            }
+        }
+    }
+
+
+
+    /* this one is large spinner for demo on design system */
+
+    &__large-demo {
+        &:before {
+            display:block;
+            width: 120px;
+            height: 120px;
+            border-right: 4px solid transparent;
+        }
+        &--default {
+            &:before {
+                border-top: 4px solid $color__blue-grey-500;
+            }
+        }
+
+        &--primary {
+            &:before {
+                border-top: 4px solid $color__light-blue-500;
+            }
+        }
+    }
+
+
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}

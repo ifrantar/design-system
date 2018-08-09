@@ -1,0 +1,423 @@
+.btn {
+    border-radius: $br-standard;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition-property: background;
+    transition-duration: 0.2s;
+    color: $color__white;
+    height: $btn__height--medium;
+    line-height: $btn__line-height--medium;
+    padding-left: $btn__padding--medium;
+    padding-right: $btn__padding--medium;
+    font-weight: $font__weight--bold;
+    font-size: $font__size--small; 
+    text-align: center;
+    text-transform: uppercase;
+
+    // Primary button
+
+    &__primary {
+
+        background: $color__primary-action;
+        border:1px solid $color__primary-action--border;
+        color: $color__white;
+
+        &:hover {
+            background: $color__primary-action--hover;
+            border:1px solid $color__primary-action--hover;
+        }
+
+        &--outline {
+            background: $color__white;
+            color: $color__primary-action;
+
+            &:hover {
+                background: white;
+                color: $color__primary-action--hover;
+            }
+        }
+
+        &--flat {
+            background: transparent;
+            border: 0;
+            color: $color__primary-action;
+
+            &:hover {
+                border: 0;
+                background: transparent;
+                color: $color__primary-action--hover;
+            }
+        }
+
+        &--active {
+            background: $color__primary-action;
+            border: 1px solid $color__primary-action--border;
+            color: $color__white;
+            position: relative;
+            z-index: $z-index__active;
+        }
+    }
+
+    // Secondary button
+
+    &__secondary {
+        background: $color__secondary-action;
+        border:1px solid $color__secondary-action--border;
+        color: $color__white;
+
+        &:hover {
+            background: $color__secondary-action--hover;
+            border:1px solid $color__secondary-action--hover;
+        }
+
+        &--outline {
+            background: $color__white;
+            color: $color__secondary-action;
+
+            &:hover {
+                background: $color__white;
+                color: $color__secondary-action--hover;
+            }
+        }
+
+        &--flat {
+            background: transparent;
+            border: 0;
+            color: $color__secondary-action;
+
+            &:hover {
+                border: 0;
+                background: transparent;
+                color: $color__secondary-action--hover;
+            }
+        }
+
+        &--active {
+            background: $color__secondary-action; 
+            border: 1px solid $color__secondary-action--active;
+            color: $color__white;
+            position: relative;
+            z-index: $z-index__active;
+        }
+    }
+
+    // Destructive button
+
+    &__destructive {
+        background: $color__destructive-action;
+        border: 1px solid $color__destructive-action--border;
+
+         &:hover {
+            background: $color__destructive-action--hover;
+            border: 1px solid $color__destructive-action--hover;
+        }
+
+        &--outline {
+            background: $color__white;
+            color: $color__destructive-action;
+
+            &:hover {
+                background: white;
+                color: $color__destructive-action--hover;
+            }
+        }
+
+        &--flat {
+            background: transparent;
+            border: 0;
+            color: $color__destructive-action;
+
+            &:hover {
+                border: 0;
+                background: transparent;
+                color: $color__destructive-action--hover;
+            }
+        }
+
+        &--active {
+            background: $color__destructive-action;
+            border: 1px solid $color__destructive-action--active;
+            color: $color__white;
+            position: relative;
+            z-index: $z-index__active;
+        }
+    }
+
+    // Primary button
+
+    &__neutral {
+
+        background: $color__neutral-action;
+        border:1px solid $color__neutral-action--border;
+        color: $color__label--neutral;
+
+        &:hover {
+            background: $color__neutral-action--hover;
+            border:1px solid $color__neutral-action--hover;
+            color: $color__label--neutral--hover
+        }
+
+        &--outline {
+            background: $color__white;
+            color: $color__label--neutral;
+
+            &:hover {
+                background: $color__white;
+                color: $color__label--neutral--hover;
+            }
+        }
+
+        &--flat {
+            background: transparent;
+            border: 0;
+            color: $color__label--neutral;
+
+            &:hover {
+                border: 0;
+                background: transparent;
+                color: $color__label--neutral--hover
+            }
+        }
+
+        &--active {
+            background: $color__neutral-action--hover;
+            border: 1px solid $color__neutral-action--border;
+            color: $color__label--neutral--hover;
+            position: relative;
+            z-index: $z-index__active;
+        }
+    }
+
+    // BUTTON PROPERTIES
+    // -----------------
+
+    // Size
+
+    &__size {
+
+        &-l {
+            height: $btn__height--large;
+            line-height: $btn__line-height--large;
+            padding-left: $btn__padding--large;
+            padding-right: $btn__padding--large;
+        }
+
+        &-m {
+            height: $btn__height--medium;
+            line-height: $btn__line-height--medium;
+            padding-left: $btn__padding--medium;
+            padding-right: $btn__padding--medium;
+        }
+
+        &-s {
+            height: $btn__height--small;
+            line-height: $btn__line-height--small;
+            padding-left: $btn__padding--small;
+            padding-right: $btn__padding--small;
+        }
+    }
+
+    // Block level
+
+    &__block {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+
+    // Disabled
+
+    &__disabled {
+        opacity: .5;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    // Button grouping alternatives
+
+    &__group {
+        &--right {
+            text-align: right;
+
+            .btn {
+                margin-left:16px;
+            }
+        }
+    }
+
+    // Buttons used as segmented navigation
+
+    &__segmented {
+        
+        border-radius: $br-standard;
+        display: inline-flex;
+        padding: 2px;
+        margin-right: 2px;
+
+        .btn {
+            border: 0;
+            height: auto;
+        }
+
+        &--primary {
+            border:1px solid $color__primary-action--border;
+        }
+
+        &--secondary {
+            border:1px solid $color__secondary-action--border;
+        }
+
+        &--destructive {
+            border: 1px solid $color__destructive-action--border;
+        }
+
+        &--neutral {
+            border:1px solid $color__neutral-action--border;
+        }
+
+        .btn:first-child {            
+            margin-left: 0;
+        }
+
+        .btn:last-child {
+            margin-right: 0
+        }
+
+        /* alignment of segmented navigation */
+
+        &--align {
+            &-left {
+                text-align: left;
+            }
+
+            &-center {
+                text-align: center;
+            }
+
+            &-right {
+                text-align: right;
+            }
+        }
+
+        .material-icons {
+            // float: left;
+            margin-right: 4px;
+            // margin-top: -5px;
+            top: 0;
+        }
+    }
+
+    &__extras {
+        display: flex;
+        justify-content: center;
+
+        &--graph {
+            vertical-align: middle;
+
+            &:last-child {
+                margin-right: $space__x-small;
+            }
+
+            .material-icons {
+                top: -1px;
+                vertical-align: middle;
+            }
+        }
+
+        &--label {
+            flex-grow: 1;
+            padding-left: $space__x-small;
+            padding-right: $space__x-small;
+        }
+    }
+
+    // Button dropdown
+
+    &__dropdown {
+
+        white-space: nowrap;
+
+        &:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: $space__small;
+            vertical-align: $space__xxx-small;
+            content: "";
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $color__white;
+        }
+
+        &--primary {
+            &:after {
+                border-top: 5px solid $color__primary-action;
+            }
+        }
+
+        &--secondary {
+            &:after {
+                border-top: 5px solid $color__secondary-action;
+            }
+        }
+
+        &--destructive {
+            &:after {
+                border-top: 5px solid $color__destructive-action;
+            }
+        }
+    }
+
+    // Branded buttons
+
+    &__brand {
+
+        &--google {
+
+            background: $color__white url(/public/assets/images/stellwagen_portal/google-logo-icon.svg) 12px 12px no-repeat;
+            color: $color__google;
+            border: 1px solid $color__google;
+
+            &:hover {
+                background: $color__white url(/public/assets/images/stellwagen_portal/google-logo-icon.svg) 12px 12px no-repeat;
+                color: $color__google--hover;
+            }
+
+        }
+
+        &--office-365 {
+            background: $color__white url(/public/assets/images/stellwagen_portal/office-logo-icon.svg) 12px 12px no-repeat;
+            color: $color__office-365;
+            border: 1px solid $color__office-365;
+
+            &:hover {
+                background: $color__white url(/public/assets/images/stellwagen_portal/office-logo-icon.svg) 12px 12px no-repeat;
+                color: $color__office-365--hover;
+            }
+        }
+
+        &--linkedin {
+            background: $color__white url(/public/assets/images/stellwagen_portal/linkedin-logo-icon.svg) 12px 12px no-repeat;
+            color: $color__linkedin;
+            border: 1px solid $color__linkedin;
+
+            &:hover {
+                background: $color__white url(/public/assets/images/stellwagen_portal/linkedin-logo-icon.svg) 12px 12px no-repeat;
+                color: $color__linkedin--hover;
+            }
+        }
+
+    }
+
+    // Icon-only button
+    &__icon-only {
+        padding-left: $space__xxx-small;
+        padding-right: $space__xxx-small;
+        height: auto;
+    }
+}

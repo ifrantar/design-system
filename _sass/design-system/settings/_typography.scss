@@ -1,0 +1,40 @@
+// Base font
+
+// $base-font-size                     : 100% !default; // 92.6% // 96.5%
+$base-font-weight                   : 400 !default;
+
+// Font sizes
+$font__size--5x-large               : 2.280rem;         // 78
+$font__size--4x-large               : 2.027rem;         // 65
+$font__size--3x-large               : 1.802rem;         // 54
+$font__size--xx-large               : 1.602rem;         // 45
+$font__size--x-large                : 22px;         // 22
+$font__size--large                  : 18px;             // 20
+$font__size--medium                 : 16px;             // 18
+$font__size--base                   : 14px;             // 16
+$font__size--small                  : 12px;         // 12
+$font__size--tiny                   : 10px;         // 10
+$font__size--tiny-uppercase         : 0.769rem;         // 9
+
+// Font weights
+
+$font__weight--light                : 300 !default;
+$font__weight--normal               : 400 !default;
+$font__weight--medium               : 500 !default;
+$font__weight--bold                 : 700 !default;
+$font__weight--heavy                : 900 !default; // Presently not used.
+
+// Line heights
+
+$font__line-height--base            : 1;
+$font__line-height--heading         : 1.42;
+$font__line-height--error-tootip    : 1.42;
+$font__line-height--body            : 1.5;
+$font__line-height--navigation      : 2.4;
+
+
+// Components typography
+
+$font__panel-header                 : $font__size--medium !default;
+
+// Tables fonts

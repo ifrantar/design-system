@@ -1,0 +1,13 @@
+.dark__ui {
+
+    .panel {
+        background: $color__dark-ui-900;
+        border:1px solid $color__dark-ui-800;
+
+        &__header {
+            border-bottom: 1px solid $color__dark-ui-800;
+            position: relative;
+        }
+    }
+    
+}

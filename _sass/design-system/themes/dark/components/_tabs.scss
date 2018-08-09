@@ -1,0 +1,20 @@
+.dark__ui {
+
+    .tabs {
+
+        a {
+            color: $color__blue-grey-100;
+
+            &:hover {
+                color: $color__primary-action;
+            }
+        }
+
+        &__w-underline {
+            border-bottom: 1px solid $color__dark-ui-800;
+            margin-top: -12px;
+        }
+
+    }
+    
+}

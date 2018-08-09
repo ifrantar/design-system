@@ -1,0 +1,20 @@
+.dark__ui {
+
+    .spinner {
+        
+        &__large { 
+            background:rgba(0,0,0,1);
+        }
+
+        &__small {
+
+            &--default {
+                &:before {
+                    border-top: 2px solid $color__blue-grey-500;
+                }
+            }
+
+        }
+    }
+    
+}

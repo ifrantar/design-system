@@ -1,0 +1,271 @@
+// Trumps are for throwaway (S)CSS styles devs and designers need to quickly use to implement
+// work in progress. 
+
+.counter-component {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter-component-label {
+    width: 8em;
+}
+
+.counter-component-value {
+    width: 3em;
+    padding-right: 10px;
+}
+
+.filtered-value-div {
+    width: 2em;
+    height: 2em;
+    padding: 1px;
+    background: #EEEEEE;
+}
+
+.filtered-value-div.is-filtered {
+    background: lawngreen;
+}
+
+.filtered-value-table {
+    margin-bottom: 1em;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+.highlight {
+  background: #00aaaa;
+}
+
+.recharts-wrapper {
+    overflow: hidden;
+}
+
+.table__cell--has-field {
+    $width: 300px;
+    width: $width;
+    min-width: $width;
+}
+
+
+.bubble-map {
+    // Contain the legend
+    position: relative;
+
+    &__legend {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &__legend-item {
+        display: inline-block;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    &__legend-item-icon {
+        width: 66px;
+        height: 6px;
+        margin: 2px 2px 0px 0px;
+    }
+
+    &__legend-item-label {
+        text-align: center;
+    }
+}
+
+.bubble_map_tooltip {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+}
+
+.grid__item--forced-overflow {
+    // This forces overflow on a flex-item
+    width: 0;
+}
+
+.form_comparison_table {
+    &__title-box {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    &__title {
+        flex-grow: 1;
+    }
+
+    &__add {
+        cursor: pointer;
+        border: none;
+        vertical-align: middle;
+
+        &:hover {
+            background-color: $color__faint-blue;
+        }
+    }
+}
+
+// Grid sample needs to be removed
+.grid-sample {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+.wizard {
+    &__tab {
+        font-size: 175%;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+
+        &_selected {
+            font-weight: bold;
+        }
+    }
+    &__tab-text {
+        &:before {
+            // Grabs text value from the tab and makes keeps it bold to avoid content jumps when toggling tabs
+            content: attr(data-text);
+            font-weight: bold;
+            visibility: hidden;
+            display: block;
+            height: 0;
+        }
+    }
+
+    &__icon {
+        margin-right: $space__small;
+        position: relative;
+
+        &-symbol-checkbox {
+            position: absolute;
+            left: 9px;
+            top: -3px;
+        }
+        &-symbol-number {
+            position: absolute;
+            left: 13px;
+            top: 0;
+        }
+
+
+        &-circle {
+            stroke: black;
+            stroke-width: 1;
+
+            &_selected {
+                stroke-width: 2;
+            }
+        }
+    }
+
+    &__content {
+        margin-left: $space__xx-large;
+    }
+}
+
+.nested-two-column-form {
+    &__group {
+        margin-bottom: $space__medium;
+    }
+
+    &__header {
+        margin-bottom: $space__small;
+    }
+}
+
+.usericon {
+    &__profile-picture {
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 100%;
+        background: $color__blue-grey-600;
+        display: inline-block;
+
+        &_beside-name {
+            margin-right: $space__x-small;
+        }
+    }
+
+    &__profile-name {
+        display: inline-block;
+        position: relative;
+        top: -$space__small;
+
+        .material-icons {
+            top:7px;
+        }
+
+        &--theme {
+            &-dark {
+                color: $color__blue-grey-700;
+            }
+
+            &-light {
+                color: $color__blue-grey-100;
+            }
+        }
+    }
+}
+
+.aircraft-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: baseline;
+    align-content: baseline;
+
+    &__label {
+        flex: 0 1 auto;
+        margin-right: $space__x-small
+    }
+
+    &__msn {
+        flex: 0 1 auto;
+    }
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: baseline;
+    align-content: baseline;
+
+    &__header-area {
+        flex: 0 1 auto;
+        margin-right: $space__medium;
+    }
+
+    &__tabs {
+        flex: 1 0 auto;
+    }
+}

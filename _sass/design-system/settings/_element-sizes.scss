@@ -1,0 +1,38 @@
+// Button based sizes for elements such as
+// inputs, buttons, pagination
+
+// Buttons sizes determine the sizes. This trickle down
+// fro top to bottom.
+
+$btn__height--large         : $space__xx-large;
+$btn__height--medium        : $space__x-large;
+$btn__height--small         : $space__large;
+
+$btn__line-height--large    : 3.08rem;
+$btn__line-height--medium   : 2.4rem;
+$btn__line-height--small    : 1.85rem;
+
+$btn__padding--large        : $space__large;
+$btn__padding--medium       : $space__medium;
+$btn__padding--small        : $space__small;
+
+// Inputs will take the values from buttons
+
+$input__height--large         : $btn__height--large;
+$input__height--medium        : $btn__height--medium;
+$input__height--small         : $btn__height--small;
+
+$input__padding--large        : $btn__padding--large;
+$input__padding--medium       : $btn__padding--medium;
+$input__padding--small        : $btn__padding--small;
+
+// Input Addons take values from inputs
+
+$input-addon__height--large         : $input__height--large;
+$input-addon__height--medium        : $input__height--medium;
+$input-addon__height--small         : $input__height--small;
+
+$input-addon__padding--large        : $input__padding--large;
+$input-addon__padding--medium       : $input__padding--medium;
+$input-addon__padding--small        : $input__padding--small;
+

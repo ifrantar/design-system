@@ -1,0 +1,31 @@
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: $font__weight--medium;
+    line-height: $font__line-height--heading;
+    color: $color__typography-headings;
+    margin:0;
+}   
+
+.h1 {
+    font-size: $font__size--x-large;
+}
+
+.h2 {
+    font-size: $font__size--large;
+}
+
+.h3 {
+    font-size: $font__size--medium;
+}
+
+.h4 {
+    font-size: $font__size--base;
+}
+
+// .h5 {
+//     font-size: $font__size--small;
+//     font-weight: $font__weight--bold;
+// }
+
+// .h6 {
+
+// }

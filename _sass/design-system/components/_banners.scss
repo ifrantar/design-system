@@ -1,0 +1,151 @@
+.banner {
+    background: $color__white;
+    padding: $space__s-medium $space__small $space__s-medium $space__small;
+    border: 1px solid $color__blue-grey-500;
+    border-radius: $br-standard;
+    position: relative;
+    display: flex;
+
+    // Inner typographic elements
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        background: url(/public/assets/images/ds/loudspeaker-icon.svg) 50% 50% no-repeat;
+        background-size: 20px;
+        width: 32px;
+        height: 22px;
+        margin-right: $space__x-small;
+        margin-top: -$space__xxx-small;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+
+    &__close {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        margin-top: -2px;
+
+        .material-icons {
+            top: 0;
+        }
+    }
+
+    &__sticky {
+        position: fixed;
+        width: 400px;
+        z-index: $z-index__sticky-message;
+        border-left-width: 6px;
+        box-shadow: 14px 13px 47px -15px rgba(0,0,0,0.3);
+
+        .banner__icon {
+            background-size: 85%;
+            width: 112px;
+            height: 25px;
+            margin-right: $space__small;
+        }
+
+        &--top-left {
+            top: $space__x-large;
+            left: $space__large;
+        }
+
+        &--top-right {
+            top: $space__x-large;
+            right: $space__large;
+        }
+
+        // This is the default positioning.
+        &--bottom-left {
+            bottom: $space__x-large;
+            left: $space__large;
+        }
+
+        &--bottom-right {
+            bottom: $space__x-large;
+            right: $space__large;
+        }
+
+    }
+
+    &--default {
+        border-color: $color__blue-grey-500;
+        background: $color__blue-grey-50;
+
+        .banner__icon {
+            background-image: url(/public/assets/images/ds/loudspeaker-icon.svg);
+        }
+    }
+
+    &--information {
+        border-color: $color__teal-500;
+        background: $color__teal-50;
+        color: $color__teal-800;
+
+        h4, p {
+            color: $color__teal-800;
+        }
+
+        .banner__icon {
+            background-image: url(/public/assets/images/ds/information-icon.svg);
+        }
+    }
+
+    &--success {
+        border-color: $color__green-500;
+        background: $color__green-50;
+        color: $color__green-900;
+
+        h4, p {
+           color: $color__green-900;
+        }
+
+        .banner__icon {
+             background-image: url(/public/assets/images/ds/success-icon.svg);
+        }
+    }
+
+    &--warning {
+        border-color: $color__orange-500;
+        background: $color__orange-50;
+        color: $color__orange-900;
+
+        h4, p {
+            color: $color__orange-900;
+        }
+
+        .banner__icon {
+            background-image: url(/public/assets/images/ds/warning-icon.svg);
+        }
+    }
+
+    &--danger {
+        border-color: $color__red-500;
+        background: $color__red-50;
+        color: $color__red-800;
+
+        h4, p {
+            color: $color__red-800;
+        }
+
+        .banner__icon {
+            background-image: url(/public/assets/images/ds/danger-icon.svg);
+        }
+    }
+
+    &--inline {
+        padding: $space__x-small $space__x-small $space__x-small $space__small;
+    }
+
+    /* overrides */
+
+    p {
+        margin: 0;
+        line-height: 1.45;
+    }
+}

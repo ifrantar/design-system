@@ -1,0 +1,53 @@
+// This file it's only used for the color swatches styleguide.
+// Will need a better placement to it.
+
+.color {
+    &__secondary {
+        display: inline-block;
+        position: relative;
+        width: 180px;
+        min-height: 180px;
+        border: 1px solid $color__blue-grey-100;
+        border-radius: $br-standard;
+        margin-right: $space__small;
+        transition: width .25s;
+        overflow: hidden;
+
+        // Text colors
+
+        &__dark {
+            background: $color__blue-grey-900;
+        }
+
+        &__dark50 {
+            background: $color__blue-grey-500;
+        }
+
+        // Secondary colors
+
+        &__red {
+            background: $color__red-500;
+        }
+
+         &__blue {
+            background: $color__light-blue-500;
+        }
+
+         &__green {
+            background: $color__green-500;
+        }
+
+         &__yellow {
+            background: $color__yellow-500;
+        }
+    }
+
+    &__specification {
+        background: $color__white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: $space__x-small;
+    }
+}

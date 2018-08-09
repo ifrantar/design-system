@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    // background: $color__table--thead-background;
+}
+
+tbody {
+    tr:last-child {
+        border-bottom: 0;
+    }
+}
+
+tfoot {
+    border-top: 1px solid $color__table--borders;
+    
+    tr:last-child {
+        border-bottom: 0;
+    }
+}
+
+tr {
+    border-bottom: 1px solid $color__table--borders;
+}
+
+th, td {
+    vertical-align: bottom;
+    border-right: 1px solid $color__table--borders;
+
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+th {
+    color: $color__table--th;
+    text-transform: uppercase;
+    font-size: $font__size--tiny-uppercase;
+    font-weight: $font__weight--bold;
+}

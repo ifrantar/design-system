@@ -1,0 +1,103 @@
+// SVG icons styles
+
+.icon {
+    display: table;;
+
+    > svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__size {
+        &--small {
+            width: 16px;
+            height: 16px;            
+        }
+
+        &--medium {
+            width: 24px;
+            height: 24px;
+        }
+
+        &--large {
+            width: 32px;
+            height: 32px;
+        }
+
+        &--x-large {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    
+    &__color {
+        &--sidebar {
+            &--default {
+                > svg {
+                    fill: $color__black;
+                }
+            }
+            &--active {
+                > svg {
+                    fill: $color__light-blue-500;
+                }
+            }
+        }
+
+        &--ui {
+            > svg {
+                fill: $color__black;
+            }
+            &--active {
+                > svg {
+                    fill: $color__blue-grey-900;
+                }
+            }
+        }
+        
+        &--danger {
+            > svg {
+                fill: $color__red-600;
+            }
+        }
+
+        &--warning {
+            > svg {
+                fill: $color__orange-800;
+            }
+        }
+
+        &--success {
+            > svg {
+                fill: $color__green-600;
+            }
+        }
+
+        &--info {
+            > svg {
+                fill: $color__light-blue-800;
+            }
+        }
+
+        &--action {
+            > svg {
+                fill: $color__light-blue-500;
+            }
+        }
+
+        &--white {
+            > svg {
+                fill: $color__white;
+            }
+        }
+
+        &--empty {
+            > svg {
+                fill: $color__grey-600;
+            }
+        }
+    }
+    
+    
+}

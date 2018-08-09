@@ -1,0 +1,115 @@
+.cards {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background: $color__white;
+    border-radius: 4px;
+    border: 1px solid $color__blue-grey-100;
+    padding: $space__x-large;
+    border-radius: $br-standard;
+    background: $color__white;
+    transition: all 150ms ease;
+    transform: scale(1);
+    width: 100%;
+
+    &--hover:hover {
+        transition: all 150ms ease;
+        transform: scale(1.05);
+        z-index: $z-index__active;
+    }
+
+    &--padding {
+
+        &-s {
+            padding-top: $space__small;
+            padding-left: $space__small;
+            padding-right: $space__small;
+            padding-bottom: $space__small;
+        }
+
+        &-m {
+            padding-top: $space__medium;
+            padding-left: $space__medium;
+            padding-right: $space__medium;
+            padding-bottom: $space__medium;
+        }
+
+        &-l {
+            padding-top: $space__x-large;
+            padding-left: $space__x-large;
+            padding-right: $space__x-large;
+            padding-bottom: $space__x-large;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        &--add {
+            border: 1px dashed $color__light-blue-500;
+        }
+
+        &--label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: $font__weight--bold;
+        }
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__title {
+        flex-grow: 1;
+    }
+
+    &__actions {
+        
+        &-right {
+
+        }
+
+        &-left {
+
+        }
+
+        &-item {
+            width: $space__medium;
+            height: 100%;
+            float: left;
+            margin-left: $space__x-small;
+            margin-right: $space__x-small;
+            padding-top: 0;
+  
+            &:first-child {
+              margin-left: 0;
+            }
+  
+            &:last-child {
+              margin-right: 0;
+            }
+  
+            .spinner {
+              margin-top: $space__x-small;
+              margin-left: $space__x-small;
+            }
+  
+            .material-icons {
+              color: $color__blue-grey-500;
+              top: -2px;
+            }
+  
+            &--active {
+                .material-icons {
+                    color: $color__blue-grey-800;
+                }
+            }
+        }
+    }
+
+    &--selected {
+        border: 1px solid $color__green-500;
+    }
+}

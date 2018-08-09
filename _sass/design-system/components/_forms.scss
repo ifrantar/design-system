@@ -1,0 +1,354 @@
+// With .form__* what we are styling is the container properties
+// when there are changes needed other than the form element itself.
+
+.form {
+
+    &__textfield, &__select, &__textarea {
+
+        position: relative;
+
+        &--error {
+
+            &-tooltip {
+
+                .f__message {
+                    background: $color__red-500;
+                    border-radius: $br-standard;
+                    color: $color__white;
+                    padding: $space__x-small;
+                    position: absolute;
+                    margin-top: $space__x-small;
+                    width: 100%;
+                    z-index: 2;
+                    white-space: normal;
+                    line-height: $font__line-height--error-tootip;
+
+                    &::before {
+                        content: " ";
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 8px solid $color__form-error;
+                        position: absolute;
+                        top: -6px;
+                        right: 12px;
+                    }
+                }
+
+            }
+        }
+
+        .material-icons {
+            top: 7px;
+        }
+    }
+
+    &__group-row {
+
+        display: flex;
+
+        .form__select, .form__textfield, .form__textarea {
+            flex-grow: 1;
+            margin-right: $space__xx-small;
+        }
+
+        .form__select:last-child, .form__textfield:last-child, .form__textarea:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    &__textfield {
+        &--has-status {
+           .f__textfield {
+            padding-right: $space__x-large;
+           }
+        }
+    }
+
+    &__radio {
+        // Placeholder
+    }
+
+    &__check {
+        // Placeholder
+    }
+
+    &__select {
+        // Placeholder
+    }
+
+    &__textarea {
+        // Placeholder
+    }
+
+    &__button {
+        // Placeholder
+    }
+}
+
+
+/* actual elements */
+
+.f {
+
+    &__label {
+        color: $color__form-labels;
+    }
+
+    &__textfield, &__select, &__textarea {
+        border: 1px solid $color__input-fields;
+        border-radius: $br-standard;
+        width: 100%;
+        padding-left: $space__x-small;
+        padding-right: $space__x-small;
+
+        &:hover {
+            border-color: $color__input-fields--hover;
+        }
+
+        &:focus {
+            border-color: $color__primary-action;
+            background: $color__white;
+            color: $color__form-text;
+        }
+
+        &--success {
+            border-color: $color__form-success;
+        }
+
+        &--phantom {
+            cursor: pointer;
+            background: transparent;
+            &, &:hover {
+                border-color: transparent;
+            }
+
+            @include placeholder() {
+                color: $color__form-text;
+                opacity: 1;
+            }
+        }
+
+        &--error {
+            border-color: $color__form-error;
+        }
+
+        &--align {
+
+            &-right {
+                text-align: right;
+            }
+
+            &-left {
+                text-align: left;
+            }
+
+        }
+
+    }
+
+    &__textfield, &__select {
+
+      &--size {
+
+        &-s {
+           height: $input__height--small;
+        }
+
+        &-m {
+          height: $input__height--medium;
+        }
+
+        &-l {
+          height: $input__height--large;
+        }
+
+      }
+
+      &--status {
+
+          position: absolute;
+          right: 8px;
+          width: $space__medium;
+          height: $space__medium;
+
+          // Provisory use of .spinner. Only because material icons are a pain to align
+          // and will need to work on sorting that out.
+          .spinner {
+              position: absolute;
+              top: 8px;
+          }
+
+          &-l {
+              top: 6px;
+          }
+
+          &-m {
+              top: 2px;
+          }
+
+          &-s {
+              top: -3px;
+          }
+
+      }
+
+    }
+
+    &__select {
+
+        padding-right: $space__large;
+
+        &--arrow {
+            position: absolute;
+            right: 4px;
+            width: $space__medium;
+            height: $space__medium;
+            pointer-events: none;
+
+            &-l {
+                top: 8px;
+            }
+
+            &-m {
+                top: 2px;
+            }
+
+            &-s {
+                top: -2px;
+            }
+        }
+
+        &--status {
+            right: 28px;
+        }
+
+        &--align {
+            &-right {
+                direction: rtl;
+
+                & > option {
+                    direction: ltr;
+                }
+            }
+        }
+    }
+
+    // &__radio, &__check {
+    //     $size: 24px;
+    //
+    //     user-select: none;
+    //     position:relative;
+    //
+    //     line-height: $size; // Establish proper baseline
+    //
+    //     span {
+    //         padding-left: 2.2rem;
+    //     }
+    //
+    //     span::before, span::after {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         bottom: 0;
+    //         margin: 0;
+    //     }
+    //
+    //     span::before {
+    //         left: 0;
+    //         width: $size;
+    //         height: $size;
+    //         border: 2px solid $color__input-fields;
+    //         @include border-radius(50px);
+    //     }
+    //
+    //     span::after {
+    //         top: 5px;
+    //         left: 5px;
+    //         width: $size / 2;
+    //         height: $size / 2;
+    //         @include border-radius(10px);
+    //         transition: left .25s, background-color .25s;
+    //     }
+    //
+    //     input[type="radio"]:checked + span:after {
+    //         background-color: $color__primary-action;
+    //     }
+    //
+    //     input[type="radio"]:checked + span:before {
+    //         border:2px solid $color__primary-action;
+    //     }
+    //
+    //     &--information {
+    //         input[type="radio"]:checked + span:after {
+    //             background-color: $color__green-500;
+    //         }
+    //
+    //         input[type="radio"]:checked + span:before {
+    //             border:2px solid $color__green-500;
+    //         }
+    //     }
+    // }
+
+    // &__radio {
+    //
+    // }
+    //
+    // &__check {
+    //     span::before {
+    //         @include border-radius(4px);
+    //     }
+    //
+    //     span::after {
+    //         // background-color: $color__white;
+    //     }
+    //
+    //     input[type="checkbox"]:checked + span:after {
+    //         background:url(/public/assets/images/stellwagen/tick-checkbox.svg) 0 1px no-repeat;
+    //     }
+    //
+    //     input[type="checkbox"]:checked + span:before {
+    //         border:2px solid $color__primary-action;
+    //         background: $color__primary-action;
+    //     }
+    //
+    //     input[type="checkbox"]:checked:disabled + span:before {
+    //         border: 2px solid $color__blue-grey-400;
+    //         background: $color__blue-grey-400;
+    //     }
+    // }
+
+    &__textarea {
+        min-height: 150px;
+        vertical-align: top;
+    }
+
+    &__button {
+
+    }
+
+    &__message {
+        display: block;
+
+        &--error {
+            color: $color__form-error;
+            font-style: italic;
+        }
+
+    }
+
+    &__mi {
+
+      &--error {
+        color: $color__red-500;
+      }
+
+      &--success {
+        color: $color__green-500;
+      }
+
+    }
+
+}

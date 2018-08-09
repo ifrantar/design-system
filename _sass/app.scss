@@ -1,0 +1,374 @@
+@import "design-system/design-system.scss";
+@import "components/icons";
+@import "components/color-scheme";
+@import "components/sidebar";
+// @import "../../../node_modules/highlight.js/styles/dracula.css";
+
+body {
+    background: $color__white;
+    color: $color__typography-copy;
+    font-weight: $font__weight--normal;
+    line-height: $font__line-height--body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font__weight--bold;
+}
+
+.content__wrapper {
+    margin-left: 260px;
+    background: white;
+}
+
+.main {
+    padding: $space__4x-large $space__xx-large $space__x-large;
+    align-self: stretch;
+    max-width: 1024px;
+
+    &__header {
+        h1 {
+            font-size: 2.843rem;
+        }
+
+        h1 + p {
+            font-size: 1.6rem
+        }
+    }
+
+    &__block {
+        border-top:1px solid $color__blue-grey-100;
+        padding-top: $space__x-large;
+    }
+
+    &__demo {
+        background: $color__blue-grey-100;
+        border-radius: $br-standard;
+        padding: $space__x-large;
+    }
+}
+
+.heading__top {
+    font-size: $font__size--4x-large;
+    margin: 1.5em 0 0;
+    letter-spacing: -1px;
+    position: relative;
+    font-weight: $font__weight--normal;
+
+    &--category {
+        color: $color__typography-faded;
+        text-transform: uppercase;
+        position: absolute;
+        top: -12px;
+        left: 0;
+        font-weight: $font__weight--normal;
+        letter-spacing: 0;
+    }
+}
+
+.color {
+    &__secondary {
+        display: inline-block;
+        position: relative;
+        width: 180px;
+        min-height: 180px;
+        border: 1px solid $color__blue-grey-100;
+        border-radius: $br-standard;
+        margin-right: $space__small;
+        transition: width .25s;
+        overflow: hidden;
+
+        // Text colors
+
+        &__dark {
+            background: $color__blue-grey-900;
+        }
+
+        &__dark50 {
+            background: $color__blue-grey-500;
+        }
+
+        // Secondary colors
+
+        &__red {
+            background: $color__red-500;
+        }
+
+         &__blue {
+            background: $color__light-blue-500;
+        }
+
+         &__green {
+            background: $color__green-500;
+        }
+
+         &__yellow {
+            background: $color__yellow-500;
+        }
+    }
+
+    &__specification {
+        background: $color__white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: $space__x-small;
+    }
+
+    &__swatches {
+        &--wrapper {
+            border-radius: $br-standard;
+            overflow: hidden;
+        }
+    }
+
+    &__swatch {
+        width: $space__x-large;
+        height: $space__x-large;
+        border-radius: $br-standard;
+
+        &--red-50 { background: $color__red-50; }
+        &--red-100 { background: $color__red-100; }
+        &--red-200 { background: $color__red-200; }
+        &--red-300 { background: $color__red-300; }
+        &--red-400 { background: $color__red-400; }
+        &--red-500 { background: $color__red-500; }
+        &--red-600 { background: $color__red-600; }
+        &--red-700 { background: $color__red-700; }
+        &--red-800 { background: $color__red-800; }
+        &--red-900 { background: $color__red-900; }
+        &--red-1000 { background: $color__red-1000; }
+
+        &--orange-50 { background: $color__orange-50; }
+        &--orange-100 { background: $color__orange-100; }
+        &--orange-200 { background: $color__orange-200; }
+        &--orange-300 { background: $color__orange-300; }
+        &--orange-400 { background: $color__orange-400; }
+        &--orange-500 { background: $color__orange-500; }
+        &--orange-600 { background: $color__orange-600; }
+        &--orange-700 { background: $color__orange-700; }
+        &--orange-800 { background: $color__orange-800; }
+        &--orange-900 { background: $color__orange-900; }
+        &--orange-1000 { background: $color__orange-1000; }
+
+        &--light-blue-50 { background: $color__light-blue-50; }
+        &--light-blue-100 { background: $color__light-blue-100; }
+        &--light-blue-200 { background: $color__light-blue-200; }
+        &--light-blue-300 { background: $color__light-blue-300; }
+        &--light-blue-400 { background: $color__light-blue-400; }
+        &--light-blue-500 { background: $color__light-blue-500; }
+        &--light-blue-600 { background: $color__light-blue-600; }
+        &--light-blue-700 { background: $color__light-blue-700; }
+        &--light-blue-800 { background: $color__light-blue-800; }
+        &--light-blue-900 { background: $color__light-blue-900; }
+
+        &--green-50 { background: $color__green-50; }
+        &--green-100 { background: $color__green-100; }
+        &--green-200 { background: $color__green-200; }
+        &--green-300 { background: $color__green-300; }
+        &--green-400 { background: $color__green-400; }
+        &--green-500 { background: $color__green-500; }
+        &--green-600 { background: $color__green-600; }
+        &--green-700 { background: $color__green-700; }
+        &--green-800 { background: $color__green-800; }
+        &--green-900 { background: $color__green-900; }
+
+        &--teal-50 { background: $color__teal-50; }
+        &--teal-100 { background: $color__teal-100; }
+        &--teal-200 { background: $color__teal-200; }
+        &--teal-300 { background: $color__teal-300; }
+        &--teal-400 { background: $color__teal-400; }
+        &--teal-500 { background: $color__teal-500; }
+        &--teal-600 { background: $color__teal-600; }
+        &--teal-700 { background: $color__teal-700; }
+        &--teal-800 { background: $color__teal-800; }
+        &--teal-900 { background: $color__teal-900; }
+
+        &--yellow-50 { background: $color__yellow-50; }
+        &--yellow-100 { background: $color__yellow-100; }
+        &--yellow-200 { background: $color__yellow-200; }
+        &--yellow-300 { background: $color__yellow-300; }
+        &--yellow-400 { background: $color__yellow-400; }
+        &--yellow-500 { background: $color__yellow-500; }
+        &--yellow-600 { background: $color__yellow-600; }
+        &--yellow-700 { background: $color__yellow-700; }
+        &--yellow-800 { background: $color__yellow-800; }
+        &--yellow-900 { background: $color__yellow-900; }
+
+        &--blue-grey-50 { background: $color__blue-grey-50; }
+        &--blue-grey-100 { background: $color__blue-grey-100; }
+        &--blue-grey-200 { background: $color__blue-grey-200; }
+        &--blue-grey-300 { background: $color__blue-grey-300; }
+        &--blue-grey-400 { background: $color__blue-grey-400; }
+        &--blue-grey-500 { background: $color__blue-grey-500; }
+        &--blue-grey-600 { background: $color__blue-grey-600; }
+        &--blue-grey-700 { background: $color__blue-grey-700; }
+        &--blue-grey-800 { background: $color__blue-grey-800; }
+        &--blue-grey-900 { background: $color__blue-grey-900; }
+
+        &--white { background: $color__white; }
+        &--black { background: $color__black; }
+
+        &--main {
+
+            td {
+                padding-top: $space__medium;
+                padding-bottom: $space__medium;
+            }
+        }
+
+        &--type-white {
+            color: $color__white;
+
+            h4 {
+                color: $color__white;
+            }
+        }
+    }
+}
+
+.button {
+    &__set {
+        vertical-align: bottom;
+        display: flex;
+        align-items: flex-start;
+
+        a {
+            margin-right: $space__small;
+        }
+    }
+}
+
+.code {
+    &__samples {
+        border-radius: 0 0 $br-standard $br-standard;
+        background: #282a36;
+        padding-left: $space__s-medium;
+        font-size:16px;
+
+        &--only {
+            border-radius: $br-standard;
+        }
+
+        pre {
+            background-color: #282a36;
+            border-radius: 5px;
+            font-family: monospace;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+}
+
+.demo {
+    background: $color__blue-grey-100;
+    border-radius: $br-standard;
+    padding: $space__x-large;
+
+    &__container {
+        margin-bottom: $space__large;
+    }
+}
+
+.styles {
+    &__headers {
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom:0;
+        }
+    }
+}
+
+.demos {
+    background: $color__blue-grey-50;
+    border: 1px solid $color__blue-grey-100;
+    border-radius: $br-standard;
+    transition: all 0.075s ease-out;
+
+    &__header {
+
+        text-transform: uppercase;
+        padding: $space__x-small;
+        position: relative;
+        border-radius: $br-standard $br-standard 0 0;
+
+        h4 {
+            font-weight: 500;
+            font-size: 14px;
+            color: $color__blue-grey-200;
+            position: relative;
+            top: 3px;
+            margin-bottom:0;
+        }
+
+        .code__action {
+            position: absolute;
+            top: 7px;
+            right: 8px;
+
+            &:hover {
+                color: $color__light-blue-800;
+            }
+        }
+    }
+
+    &__expanded {
+        background: #282a36;
+        border: 1px solid #282a36;
+        .demos__header {
+            background: #282a36;
+        }
+    }
+
+    &__body {
+        background: $color__white;
+        padding:24px;
+        border: 1px solid $color__blue-grey-100;
+        border-radius: $br-standard;
+        margin:4px;
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Sometimes we need to change the background color to showcase a component */
+
+        &--background {
+            &-grey {
+                background: $color__blue-grey-100;
+            }
+        }
+    }
+
+    &__code {
+        display: none;
+
+        &--show {
+            display: block;
+        }
+    }
+}
+
+.icons {
+
+    &__ui-container {
+
+    }
+
+    &__item {
+        border: 1px dotted $color__blue-grey-400;
+        border-radius: $br-standard;
+        min-height: 130px;
+        display:table;
+        width:100%;
+        height:100%;
+
+        .material-icons {
+            position: static;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+}

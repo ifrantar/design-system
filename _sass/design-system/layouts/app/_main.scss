@@ -1,0 +1,24 @@
+.main {
+    display: flex; 
+
+    &__content {
+        background: $color__grey-50;
+        flex: 1;
+    }
+
+    &__aside {
+
+        &--left {
+            width: 300px;
+            background: white;
+            border-right: 1px solid $color__blue-grey-100;
+        }
+
+        &--right {
+            width: 400px;
+            background: white;
+            border-left: 1px solid $color__blue-grey-100;
+        }
+        
+    }
+}

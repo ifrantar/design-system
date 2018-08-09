@@ -1,0 +1,76 @@
+.context-menu {
+    background: $color__white;
+    border-radius: $br-standard;
+    border: 1px solid $color__blue-grey-200;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1), 0 3px 1px -2px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.1);
+    min-width: 150px;
+    padding-top: $space__x-small;
+    padding-bottom: $space__x-small;
+    position: absolute;
+    z-index: $z-index__dropdown;
+    text-align: left;
+    margin-top: $space__xx-small;
+
+    &__container {
+      position: relative;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        line-height: $font__line-height--navigation;
+        padding-left: $space__s-medium;
+        padding-right: $space__s-medium;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $color__typography-copy;
+            white-space: nowrap;
+            font-size: $font__size--base;
+            font-weight: $font__weight--medium;
+        }
+
+        &:hover {
+            background: $color__blue-grey-100;
+        }
+
+        &_active {
+            background: $color__blue-grey-200;
+        }
+    }
+
+    // Positioning of the contextual menu in the context where it is triggered.
+
+    &--top {
+        bottom: 0;
+    }
+
+    &--left {
+        right: 0;
+    }
+
+    &--bottom {
+        top: 0;
+    }
+
+    &--right {
+        left: 0;
+    }
+
+    // Show and hide classes
+
+    &--show {
+        display: block;
+    }
+
+    &--hide {
+        display: none;
+    }
+
+    // if used on buttons or input addons
+
+
+}

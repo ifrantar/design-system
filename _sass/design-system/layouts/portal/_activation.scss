@@ -1,0 +1,31 @@
+.activation {
+    
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__illustration {
+
+        width: 171px;
+        height: 116px;
+        margin: 0 auto;
+        margin-bottom: $space__xx-large;
+        margin-top: $space__7x-large;
+
+        &--email {
+            background: url(/public/assets/images/stellwagen_portal/email-activate.svg) 0 0 no-repeat;
+        }
+
+        &--pending-approval {
+            background: url(/public/assets/images/stellwagen_portal/coffee-mug-wait.svg) 0 0 no-repeat;
+            height: 128px;
+        }
+
+        &--signup-success {
+            background: url(/public/assets/images/stellwagen_portal/successfull-signup-icon.svg) 0 0 no-repeat;
+            width: 240px;
+            height: 122px;
+        }
+
+    }
+}

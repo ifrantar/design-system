@@ -1,0 +1,65 @@
+.toast {
+    background: $color__blue-grey-900;
+    padding: $space__s-medium;
+    border-radius: $br-standard;
+    position: relative;
+    display: flex;
+    color: $color__white;
+    position: fixed;
+    bottom: $space__x-large;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    p {
+        color: $color__white;
+        margin: 0;
+    }
+
+    &__content {
+        flex-grow: 1;
+        padding-right: $space__small;
+    }
+
+    &__action {
+        text-transform: uppercase;
+        margin:0 $space__x-small;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    &__default {
+        .toast__action {
+            color: $color__blue-grey-400;
+        }
+    }
+
+    &__information {
+        .toast__action {
+           color: $color__teal-500; 
+        }        
+    }  
+
+    &__success {
+        .toast__action {
+            color: $color__green-500;
+        }        
+    }
+
+    &__warning {
+        .toast__action {
+            color: $color__orange-500;
+        }        
+    }
+
+    &__danger {
+        .toast__action {
+            color: $color__red-500;
+        }        
+    }
+
+}

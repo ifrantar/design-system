@@ -1,0 +1,12 @@
+// Z-index variations per our applications.
+
+$z-index__modal               : 9000;
+$z-index__overlay             : 8000;
+$z-index__sticky-message      : 7000;
+$z-index__dropdown            : 6000;
+$z-index__header              : 5000;
+$z-index__footer              : 4000;
+$z-index__active              : 3000;
+$z-index__hidden              : -1;
+$z-index__overflow--hidden    : -1;
+$z-index__overflow--options   : 1;

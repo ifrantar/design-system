@@ -1,0 +1,11 @@
+.list {
+    &__ul {
+        list-style: disc;
+        margin-left: $space__s-medium;
+    }
+
+    &__ol {
+        list-style: decimal;
+        margin-left: $space__s-medium;
+    }
+}

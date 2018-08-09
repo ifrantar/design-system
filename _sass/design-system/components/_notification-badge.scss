@@ -1,0 +1,16 @@
+.notification {
+    &__badge {
+        display: inline-block;
+        height: 20px;
+        min-width: 20px;
+        background: $color__notification-badge;
+        border-radius: 20px;
+        font-size: $font__size--tiny;
+        color: white;
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 3px;
+        line-height: 1.56;
+        text-align: center;
+    }
+}

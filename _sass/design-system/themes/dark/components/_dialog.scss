@@ -1,0 +1,16 @@
+.dark__ui {
+
+    .dialog {
+        .panel {
+            &--close {
+                background: transparent;
+            }
+
+            &__footer {
+                background: $color__dark-ui-1000;
+                border-top: 1px solid $color__dark-ui-800;
+            }
+        }
+    }
+
+}

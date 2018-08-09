@@ -1,0 +1,344 @@
+---
+layout: page
+navigation : main
+title : Colors
+permalink: /colors/
+---
+
+  <section class="main__header">
+    <h1 class="main__header--header">Colors</h1>
+    <p>Colors are an important part for our UI to convey affordance and communicate how things function making interactive elements more predictable and easier to use.</p>
+    <p>Colors are represented by their SASS variable.</p>
+  </section>
+  <section class="main__block">
+    <h2>UI colors</h2>
+    <p>To be defined...</p>
+  </section>
+  <section class="main__block">
+    <h2>Typography colors</h2>
+    <p>To be defined...</p>
+  </section>
+  <section class="main__block">
+    <h2>Data visualization colors</h2>
+    <p>To be defined...</p>
+  </section>
+  <section class="main__block">
+    <h2>Color library</h2>
+    <div class="grid grid__gutter--x-large">
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders" style="border-radius: 4px;">
+            <tbody>
+              <tr class="color__swatch color__swatch--red-500 color__swatch--main">
+                <td class="color__swatch--type-white">
+                  <h4>Red</h4><code>$color__red-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-50">
+                <td><code>$color__red-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-100">
+                <td><code>$color__red-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-200">
+                <td><code>$color__red-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-300">
+                <td><code>$color__red-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-400">
+                <td><code>$color__red-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-500">
+                <td class="color__swatch--type-white"><code>$color__red-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-600">
+                <td class="color__swatch--type-white"><code>$color__red-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-700">
+                <td class="color__swatch--type-white"><code>$color__red-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-800">
+                <td class="color__swatch--type-white"><code>$color__red-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--red-900">
+                <td class="color__swatch--type-white"><code>$color__red-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--light-blue-500 color__swatch--main">
+                <td class="color__swatch--type-white">
+                  <h4>Light Blue</h4><code>$color__light-blue-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-50">
+                <td><code>$color__light-blue-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-100">
+                <td><code>$color__light-blue-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-200">
+                <td><code>$color__light-blue-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-300">
+                <td><code>$color__light-blue-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-400">
+                <td><code>$color__light-blue-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-500">
+                <td class="color__swatch--type-white"><code>$color__light-blue-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-600">
+                <td class="color__swatch--type-white"><code>$color__light-blue-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-700">
+                <td class="color__swatch--type-white"><code>$color__light-blue-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-800">
+                <td class="color__swatch--type-white"><code>$color__light-blue-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--light-blue-900">
+                <td class="color__swatch--type-white"><code>$color__light-blue-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--teal-500 color__swatch--main">
+                <td class="color__swatch--type-white">
+                  <h4>Teal</h4><code>$color__teal-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-50">
+                <td><code>$color__teal-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-100">
+                <td><code>$color__teal-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-200">
+                <td><code>$color__teal-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-300">
+                <td><code>$color__teal-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-400">
+                <td class="color__swatch--type-white"><code>$color__teal-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-500">
+                <td class="color__swatch--type-white"><code>$color__teal-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-600">
+                <td class="color__swatch--type-white"><code>$color__teal-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-700">
+                <td class="color__swatch--type-white"><code>$color__teal-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-800">
+                <td class="color__swatch--type-white"><code>$color__teal-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--teal-900">
+                <td class="color__swatch--type-white"><code>$color__teal-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--green-500 color__swatch--main">
+                <td class="color__swatch--type-white">
+                  <h4>Green</h4><code>$color__green-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-50">
+                <td><code>$color__green-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-100">
+                <td><code>$color__green-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-200">
+                <td><code>$color__green-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-300">
+                <td><code>$color__green-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-400">
+                <td><code>$color__green-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-500">
+                <td class="color__swatch--type-white"><code>$color__green-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-600">
+                <td class="color__swatch--type-white"><code>$color__green-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-700">
+                <td class="color__swatch--type-white"><code>$color__green-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-800">
+                <td class="color__swatch--type-white"><code>$color__green-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--green-900">
+                <td class="color__swatch--type-white"><code>$color__green-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--yellow-500 color__swatch--main">
+                <td>
+                  <h4>Yellow</h4><code>$color__yellow-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-50">
+                <td><code>$color__yellow-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-100">
+                <td><code>$color__yellow-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-200">
+                <td><code>$color__yellow-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-300">
+                <td><code>$color__yellow-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-400">
+                <td><code>$color__yellow-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-500">
+                <td><code>$color__yellow-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-600">
+                <td><code>$color__yellow-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-700">
+                <td><code>$color__yellow-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-800">
+                <td><code>$color__yellow-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--yellow-900">
+                <td><code>$color__yellow-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--orange-500 color__swatch--main">
+                <td>
+                  <h4>Orange</h4><code>$color__orange-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-50">
+                <td><code>$color__orange-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-100">
+                <td><code>$color__orange-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-200">
+                <td><code>$color__orange-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-300">
+                <td><code>$color__orange-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-400">
+                <td><code>$color__orange-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-500">
+                <td><code>$color__orange-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-600">
+                <td><code>$color__orange-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-700">
+                <td><code>$color__orange-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-800">
+                <td class="color__swatch--type-white"><code>$color__orange-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--orange-900">
+                <td class="color__swatch--type-white"><code>$color__orange-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--blue-grey-500 color__swatch--main">
+                <td class="color__swatch--type-white">
+                  <h4>Blue Grey</h4><code>$color__yellow-500</code>
+                </td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-50">
+                <td><code>$color__blue-grey-50</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-100">
+                <td><code>$color__blue-grey-100</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-200">
+                <td><code>$color__blue-grey-200</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-300">
+                <td><code>$color__blue-grey-300</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-400">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-400</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-500">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-500</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-600">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-600</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-700">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-700</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-800">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-800</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--blue-grey-900">
+                <td class="color__swatch--type-white"><code>$color__blue-grey-900</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid__item grid__item--1-3">
+        <div class="color__swatches--wrapper">
+          <table class="table table__easy table__no-borders">
+            <tbody>
+              <tr class="color__swatch color__swatch--black">
+                <td class="color__swatch--type-white"><code>$color__black</code></td>
+              </tr>
+              <tr class="color__swatch color__swatch--white">
+                <td><code>$color__white</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>

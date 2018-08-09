@@ -1,0 +1,55 @@
+.header {
+
+    &__container {
+        display:flex;
+        align-items: center;
+       // outline: 1px solid orange;
+    }
+
+    &__select {
+        display: flex;
+        float: left;
+        flex: 1;
+        margin-right: $space__small;
+        align-items: center;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        h1, h2, h3 {
+            margin-right: $space__xxx-small;
+        }
+
+        &--grow {
+            flex: 1;
+        }
+    }
+
+    // &__menu {
+    //     // outline: 1px solid blue;
+    // }
+
+    &__trigger {
+        // margin-left: $space__x-small;
+    }
+
+    &__actions {
+
+      &-item {
+          float: left;
+          margin-left: $space__x-small;
+          margin-right: $space__x-small;
+
+          &:first-child {
+            margin-left: -$space__x-small;
+          }
+
+          &:last-child {
+            margin-right: -$space__xx-small;
+          }
+      }
+
+    }
+
+}

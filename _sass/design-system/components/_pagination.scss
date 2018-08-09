@@ -1,0 +1,99 @@
+.pagination {
+
+    ul {
+        margin-bottom:0;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: $space__xx-small;
+
+        &:last-child {
+          margin-right:0;
+        }
+
+        &--hellip {
+            padding-left: $space__xx-small;
+            padding-right: $space__xx-small;
+        }
+    }
+
+    &__link {
+        display: block;
+        border: 1px solid $color__secondary-action;
+        color: $color__typography-copy;
+        text-decoration: none;
+        border-radius: $br-standard;
+
+        &--active {
+            background: $color__typography-copy;
+            border:1px solid $color__typography-copy;
+            color: $color__white;
+            font-weight: 500;
+        }
+    }
+
+    &__size {
+        &-s {
+            .pagination__link {
+                height: $btn__height--small;
+                line-height: $btn__line-height--small;
+                padding-left: $btn__padding--small;
+                padding-right: $btn__padding--small;
+            }
+
+            .pagination__link--previous, .pagination__link--next {
+                padding-left: $space__xx-small;
+                padding-right: $space__xx-small;
+            }
+        }
+
+        &-m {
+           .pagination__link {
+                height: $btn__height--medium;
+                line-height: $btn__line-height--medium;
+                padding-left: $btn__padding--medium;
+                padding-right: $btn__padding--medium;
+            }
+
+            .pagination__link--previous, .pagination__link--next {
+                padding-left: $space__small;
+                padding-right: $space__small;
+            }
+        }
+
+        &-l {
+           .pagination__link {
+                height: $btn__height--large;
+                line-height: $btn__line-height--large;
+                padding-left: $btn__padding--large;
+                padding-right: $btn__padding--large;
+            }
+
+            .pagination__link--previous, .pagination__link--next {
+                padding-left: $space__small;
+                padding-right: $space__small;
+            }
+        }
+    }
+
+    &__align {
+        &-left {
+            text-align: left;
+        }
+
+        &-right {
+            text-align: right;
+        }
+
+        &-center {
+            text-align: center;
+        }
+    }
+
+    .material-icons {
+        margin-top:-6px;
+        top:7px;
+    }
+
+}

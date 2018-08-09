@@ -1,0 +1,34 @@
+
+</main>
+</div>
+
+<!-- <footer class="footer">
+  <ul class="footer__company">
+      {% for pages in site.pages %}
+        {% if pages.url contains '/page' %}
+        {% elsif pages.navigation == 'secondary' %}
+          <li><a href="{{ pages.url }}">{{ pages.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  <p>&copy; 2016 - {{ site.time | date: '%Y' }} Copyright Stellwagen Group. All rights reserved.</p>
+
+</footer> -->
+
+<script>
+  (function () {
+    var codeItems = document.querySelectorAll(".code__action");
+    codeItems.forEach(function (item) {
+      item.addEventListener("click", function(e) {
+        const target = e.currentTarget;
+        const parent = target.parentElement.parentElement;
+        parent.classList.toggle("demos__expanded");
+        const codeElement = parent.querySelector(".demos__code");
+        codeElement.classList.toggle("demos__code--show");
+      });
+    });
+    })();
+</script>
+
+</body>
+</html>

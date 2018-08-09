@@ -1,0 +1,293 @@
+.table {
+    $table-root: &;
+    
+    width:100%;
+
+    &__left-stacked {
+        width: auto;
+    }
+
+    // Table object level styles
+    // -------------------------
+    // These classes go on the .table object itself
+    // and styles the tables from globally. These are the
+    // less specific and show overridable.
+
+    &__comfy {
+        th, td {
+            padding: 1.2rem 1.5rem;
+        }
+    }
+
+    &__easy {
+        th, td {
+            padding: .65rem 1.5rem;
+        }
+    }
+
+    &__tight {
+        th, td {
+            padding: .38rem 1.5rem;
+        }
+
+        // Dividing sections on tables
+
+        .table__row-section {
+
+            background: $color__blue-grey-50;
+
+            td {
+                padding: .105rem 1.5rem;
+                font-weight: 600;
+                color: $color__blue-grey-300;
+            }
+        }
+    }
+
+    &__super-tight {
+        th, td {
+            padding: .18rem $space__s-medium;
+        }
+    }
+
+    &__no-left-right-space {
+        th, td {
+            padding-left:0;
+            padding-right:0;
+        }
+    }
+
+    &__no-top-bottom-space {
+        th, td {
+            padding-top:0;
+            padding-bottom:0;
+        }
+    }
+
+    &__align {
+        &--left {
+            text-align: left;
+        }
+
+        &--right {
+            text-align: right;
+        }
+
+        &--center {
+            text-align: center;
+        }
+
+        &--justify {
+            text-align: justify;
+        }
+
+        &--inherit {
+            text-align: inherit;
+        }
+    }
+
+    // Text no wrap on cells
+
+    &__no-text-wrap {
+        th, td {
+            white-space: nowrap;
+        }
+
+        &--cell {
+            white-space: nowrap;
+        }
+    }
+
+    // Table placement
+
+    &__inside-panel {
+
+        tbody tr:last-child, tfoot tr:last-child {
+            border-bottom: 0;
+        }
+
+        th, td {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    // Table border styling
+
+    &__borders {
+
+      &--none {
+        tr, th, td {
+            border-bottom: 0;
+            border-right: 0;
+        }
+      }
+
+      &--all {
+
+        tr {
+            border-bottom: 1px solid $color__table--borders;
+        }
+
+        th, td {
+          border-right: 1px solid $color__table--borders;
+        }
+      }
+
+      &--columns {
+
+        th, td {
+            border-right: 1px solid $color__table--borders;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+      }
+
+      &--rows {
+
+        th, td {
+            // border-bottom: 1px solid $color__table--borders;
+            border-right: 0;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+      }
+    }
+
+    &__rounded-corners {
+        border-radius: $br-standard;
+        overflow:hidden;
+
+        tr:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .material-icons {
+        margin-top: -2px;
+        top: 8px;
+    }
+
+    // Table elements: thead, tbody, tfooter
+    // -------------------------------------
+    // These styles will override the ones placed at the
+    // .table object level.
+
+    &__thead {
+
+        background: $color__white;
+        border-bottom: 1px solid $color__blue-grey-100;
+
+        &--panel {
+
+            background: $color__white;
+
+            tr {
+                border-bottom: 0;
+            }
+
+            td, th {
+                padding: 0;
+                border-radius: $br-standard;
+            }
+        }
+    }
+
+    &__tbody {
+        tr:last-child {
+            border-bottom: 0;
+        }
+
+        &__inner-section {
+            border-top: 1px solid $color__table--borders !important;
+            border-bottom: 1px solid $color__table--borders !important;
+        }
+    }
+
+    &__tfoot {
+        border-top: 1px solid $color__table--borders;
+        
+        tr:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .actions {
+        position: relative;
+    }
+
+    // Row properties
+
+    &__row {
+
+        &--align {
+
+            &-top {
+                th, td {
+                    vertical-align: top;
+                }
+            }
+
+            &-middle {
+                th, td {
+                    vertical-align: middle;
+                }
+            }
+
+            &-bottom {
+                th, td {
+                    vertical-align: bottom;
+                }
+            }
+        }
+        
+        #{$table-root} &--section {
+            border-top: 1px solid $color__table--borders;
+            border-bottom:  1px solid $color__table--borders;
+
+            &:first-child {
+                border-top: 0;
+            }
+            
+            th, td {
+                vertical-align: middle;
+            }
+
+            th {
+                background: $color__table--thead-background;
+            }
+
+            .material-icons {
+                margin-top: -8px; 
+                top: 8px;
+                left: -4px;
+            }
+        }       
+    }
+
+    // Cell properties
+
+    &__cell {
+        &--align {
+            &-left {
+                text-align: left;
+            }
+    
+            &-right {
+                text-align: right;
+            }
+    
+            &-center {
+                text-align: center;
+            }
+        }
+
+        &--add {
+            text-align: center;
+        }
+    }
+}

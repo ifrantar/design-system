@@ -1,0 +1,19 @@
+.icon {
+    &__ui-library {
+        ul {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        }
+        
+        li {
+            border: 1px solid $color__blue-grey-100;
+            border-radius: $br-standard;
+            width: 100%;
+            height: 100px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

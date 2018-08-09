@@ -1,0 +1,68 @@
+.sidebar {
+    grid-area: sidebar;
+    background: $color__white;
+    padding: $space__x-small $space__small;
+    border-right:1px solid $color__blue-grey-100;
+    width: 64px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__app-logo {
+        display: block;
+        text-align: center;
+        margin-top: $space__x-small;
+
+        > svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__divider {
+        margin: $space__small 9%;
+    }
+
+    &__nav {
+        li {
+            padding-top: $space__x-small;
+            padding-bottom: $space__s-medium;
+            width: 100%;
+
+            .icon {
+                margin: auto;
+            }
+        }
+
+        &--sub {
+            margin-top: auto;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    &__nav-item {
+        &--notification-badge {
+            position: relative;
+            display: block;
+
+            .notification__badge {
+                position: absolute;
+                top: -4px;
+                right: -2px;
+                border: 2px solid white;
+            }
+        }
+    }
+
+    &__user {
+        &--avatar {
+            display: inline-block;
+            width: 2.2rem;
+            height: 2.2rem;
+            line-height: 2.3rem;
+            border-radius: 100%;
+            background: $color__blue-grey-200;
+        }
+    }
+}

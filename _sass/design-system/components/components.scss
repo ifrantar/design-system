@@ -1,0 +1,41 @@
+// COMPONENTS
+// ------------------------
+// Elements on this section will have full styling and will follow stylistic patterns
+// appropriate to the branding of the application where they are going to be used.
+
+// They could be divided into the styling of specific classed elements i.e. p.intro__paragraph
+// or as fully fleshed out components .ui-accordion and everything inside this object.
+
+// They should be organizes as possible maintaining the ITCSS philosophy, keeping the most
+// generic to the most specific later.
+// ------------------------
+
+
+@import "headers";
+@import "paragraphs";
+@import "forms";
+@import "auto-complete";
+@import "text-lists";
+@import "cards";
+@import "buttons";
+@import "input-addons";
+@import "context-menu";
+@import "panel";
+@import "tables";
+@import "badges";
+@import "dialog";
+@import "spinners";
+@import "banners";
+@import "hamburger-button";
+@import "pagination";
+@import "infinite-scroll";
+@import "header-actions";
+@import "links";
+@import "sliders";
+@import "toasts";
+@import "empty-state";
+@import "tooltip";
+@import "graphs";
+@import "icons";
+@import "notification-badge";
+@import "tabs";

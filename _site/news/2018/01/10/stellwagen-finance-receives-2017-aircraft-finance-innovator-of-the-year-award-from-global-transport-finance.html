@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stellwagen Group</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" sizes="16x16" href="favicon.png">
+<link rel="shortcut icon" sizes="32x32" href="favicon@2x.png">
+
+<link href="/assets/main.css" rel="stylesheet" />
+<script src="/js/jquery.js"></script>
+<script src="/js/highlighter.js"></script>
+<script src="/js/scripts.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="/css/dracula.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="sidebar__logo">
+      <a class="sidebar__logo--emblem" href="/"> </a>
+      <span class="sidebar__logo--title">Design System</span>
+    </div>
+    <nav class="nav__main">
+      <ul class="nav__block">
+          
+            
+          
+            
+              <li class="nav__item "><a href="/badges/">Badges</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/banners/">Banners</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/buttons/">Buttons</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/cards/">Cards</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/colors/">Colors</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/form-elements/">Form elements</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/grid/">Grid</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/icons/">Icons</a></li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/input-addons/">Input Addons</a></li>
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/modals/">Modals</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/pagination/">Pagination</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/panels/">Panels</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/references/">References</a></li>
+            
+          
+            
+          
+            
+              <li class="nav__item "><a href="/sliders/">Sliders</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/spinners/">Spinners</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/tables/">Tables</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/tabs/">Tabs</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/toasts/">Toasts</a></li>
+            
+          
+            
+              <li class="nav__item "><a href="/typography/">Typography</a></li>
+            
+          
+            
+          
+            
+          
+      </ul>
+    </nav>
+  </div>
+  <div class="content__wrapper">
+    <main class="main">
+
+
+<h1>Stellwagen Finance Receives 2017 Aircraft Finance Innovator of the Year Award from Global Transport Finance</h1>
+<h3>Stellwagen Group | January 10, 2018</h3>
+<hr />
+
+<p>DUBLIN – Stellwagen Finance Limited is delighted to announce that it has received the 2017 Aircraft Finance Innovator of the Year award from Global Transport Finance.</p>
+
+<p>This is the second year running that Stellwagen Finance has taken this award in recognition of its innovative and fresh approach to aircraft financing. During the year, Stellwagen Finance successfully closed a variety of transactions including full financing of an A380 on long-term operating lease to Emirates, capital markets PDP financing for a major lessor and commercial bank financing using a new lender for a Middle-Eastern lessor. Stellwagen Finance also originated and structured the first direct loans made by the Stellwagen Group directly to lessor customers secured on Airbus A321 and Boeing 737 aircraft. Marc Bourgade, CEO of Stellwagen Finance commented, “On behalf of Stellwagen Finance, I would like to dedicate this award to my fantastic team who is fully committed to providing excellence for the benefit of our clients”. Stellwagen Finance has now closed over USD $9bn in transactions since its inception in 2013.</p>
+
+<p>The Global Transport Finance Annual Awards recognize the world’s leading transport, finance, leasing, legal, and aviation companies. The Global Transport Finance awards are presented for outstanding transactions in the airports, aviation, rail, shipping, road, and legal transport finance markets every year.</p>
+
+<p>ABOUT STELLWAGEN FINANCE</p>
+
+<p>Stellwagen Finance is the debt arrangement business of Stellwagen Group responsible for origination of both capital market and commercial lending transactions. Stellwagen Finance (formerly known as AFC) has financed $9BN of aircraft since it was founded in 2013. Stellwagen Finance is headquartered in Dublin with offices in New York, Dubai, Singapore and London.</p>
+
+<p>ABOUT THE STELLWAGEN GROUP</p>
+
+<p>The Stellwagen Group is a fully-integrated provider of asset management, technical management, fleet and capital financing solutions to the global aviation industry as well as aviation investors.  The Group has a number of companies headquartered in Dublin,
+Ireland: Stellwagen Finance Company, Seraph Aviation Management, Stellwagen Capital and Stellwagen Technology.</p>
+
+
+
+
+</main>
+</div>
+
+<!-- <footer class="footer">
+  <ul class="footer__company">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="/news/">News</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        
+      
+  </ul>
+  <p>&copy; 2016 - 2018 Copyright Stellwagen Group. All rights reserved.</p>
+
+</footer> -->
+
+<script>
+  (function () {
+    var codeItems = document.querySelectorAll(".code__action");
+    codeItems.forEach(function (item) {
+      item.addEventListener("click", function(e) {
+        const target = e.currentTarget;
+        const parent = target.parentElement.parentElement;
+        parent.classList.toggle("demos__expanded");
+        const codeElement = parent.querySelector(".demos__code");
+        codeElement.classList.toggle("demos__code--show");
+      });
+    });
+    })();
+</script>
+
+</body>
+</html>
+
